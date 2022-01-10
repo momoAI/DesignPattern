@@ -54,6 +54,13 @@
 		8EBCE326278C0164001AF53D /* FlyWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE325278C0164001AF53D /* FlyWeight.swift */; };
 		8EBCE328278C0176001AF53D /* flyweight.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EBCE327278C0176001AF53D /* flyweight.png */; };
 		8EBCE32A278C025A001AF53D /* FlyWeighntFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE329278C025A001AF53D /* FlyWeighntFactory.swift */; };
+		8EBCE32D278C26B6001AF53D /* composite.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EBCE32C278C26B6001AF53D /* composite.png */; };
+		8EBCE32F278C26E9001AF53D /* TreeComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE32E278C26E9001AF53D /* TreeComponent.swift */; };
+		8EBCE331278C2740001AF53D /* TreeComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE330278C2740001AF53D /* TreeComposite.swift */; };
+		8EBCE334278C34C6001AF53D /* command.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EBCE333278C34C6001AF53D /* command.png */; };
+		8EBCE336278C34E3001AF53D /* TVCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE335278C34E3001AF53D /* TVCommand.swift */; };
+		8EBCE338278C35B1001AF53D /* TVInvoker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE337278C35B1001AF53D /* TVInvoker.swift */; };
+		8EBCE33A278C3736001AF53D /* TV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE339278C3736001AF53D /* TV.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,6 +150,13 @@
 		8EBCE325278C0164001AF53D /* FlyWeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyWeight.swift; sourceTree = "<group>"; };
 		8EBCE327278C0176001AF53D /* flyweight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flyweight.png; sourceTree = "<group>"; };
 		8EBCE329278C025A001AF53D /* FlyWeighntFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyWeighntFactory.swift; sourceTree = "<group>"; };
+		8EBCE32C278C26B6001AF53D /* composite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = composite.png; sourceTree = "<group>"; };
+		8EBCE32E278C26E9001AF53D /* TreeComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeComponent.swift; sourceTree = "<group>"; };
+		8EBCE330278C2740001AF53D /* TreeComposite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeComposite.swift; sourceTree = "<group>"; };
+		8EBCE333278C34C6001AF53D /* command.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = command.png; sourceTree = "<group>"; };
+		8EBCE335278C34E3001AF53D /* TVCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCommand.swift; sourceTree = "<group>"; };
+		8EBCE337278C35B1001AF53D /* TVInvoker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVInvoker.swift; sourceTree = "<group>"; };
+		8EBCE339278C3736001AF53D /* TV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TV.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +207,8 @@
 		8E12B939277D5E8900938808 /* DesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				8EBCE332278C34B5001AF53D /* Command */,
+				8EBCE32B278C26AA001AF53D /* Composite */,
 				8EBCE324278C0110001AF53D /* FlyWeight */,
 				8EBCE31D278999B1001AF53D /* Proxy */,
 				8EBCE3182789921C001AF53D /* Facade */,
@@ -341,6 +357,27 @@
 			path = FlyWeight;
 			sourceTree = "<group>";
 		};
+		8EBCE32B278C26AA001AF53D /* Composite */ = {
+			isa = PBXGroup;
+			children = (
+				8EBCE32C278C26B6001AF53D /* composite.png */,
+				8EBCE330278C2740001AF53D /* TreeComposite.swift */,
+				8EBCE32E278C26E9001AF53D /* TreeComponent.swift */,
+			);
+			name = Composite;
+			sourceTree = "<group>";
+		};
+		8EBCE332278C34B5001AF53D /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				8EBCE333278C34C6001AF53D /* command.png */,
+				8EBCE335278C34E3001AF53D /* TVCommand.swift */,
+				8EBCE337278C35B1001AF53D /* TVInvoker.swift */,
+				8EBCE339278C3736001AF53D /* TV.swift */,
+			);
+			path = Command;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -448,6 +485,8 @@
 				8EBCE328278C0176001AF53D /* flyweight.png in Resources */,
 				8E12B94A277D5E8C00938808 /* LaunchScreen.storyboard in Resources */,
 				8EBCE3012786E64C001AF53D /* builder.png in Resources */,
+				8EBCE32D278C26B6001AF53D /* composite.png in Resources */,
+				8EBCE334278C34C6001AF53D /* command.png in Resources */,
 				8EBCE32327899A0E001AF53D /* proxy.png in Resources */,
 				8E12B947277D5E8C00938808 /* Assets.xcassets in Resources */,
 				8EBCE30B27895C9F001AF53D /* factory-abstrac.png in Resources */,
@@ -494,12 +533,14 @@
 				8E12B93C277D5E8900938808 /* AppDelegate.m in Sources */,
 				8EBCE2FD2786E51D001AF53D /* Cat.swift in Sources */,
 				8EBCE2F427869891001AF53D /* MealOrder.swift in Sources */,
+				8EBCE338278C35B1001AF53D /* TVInvoker.swift in Sources */,
 				8E12B988277DA16F00938808 /* XMMouse.m in Sources */,
 				8E12B985277DA09500938808 /* HPKeyboard.m in Sources */,
 				8EBCE326278C0164001AF53D /* FlyWeight.swift in Sources */,
 				8EBCE31527898342001AF53D /* Coffee.swift in Sources */,
 				8E12B94D277D5E8C00938808 /* main.m in Sources */,
 				8EBCE32A278C025A001AF53D /* FlyWeighntFactory.swift in Sources */,
+				8EBCE331278C2740001AF53D /* TreeComposite.swift in Sources */,
 				8E12B971277D8DED00938808 /* CameraFactory.m in Sources */,
 				8EBCE31F278999F3001AF53D /* Subject.swift in Sources */,
 				8E12B982277DA08300938808 /* HPMouse.m in Sources */,
@@ -508,9 +549,12 @@
 				8EBCE30E2789660E001AF53D /* Vehicle.swift in Sources */,
 				8E12B98B277DA17B00938808 /* XMKeyboard.m in Sources */,
 				8EBCE317278984CA001AF53D /* Burden.swift in Sources */,
+				8EBCE336278C34E3001AF53D /* TVCommand.swift in Sources */,
+				8EBCE33A278C3736001AF53D /* TV.swift in Sources */,
 				8E12B991277DAD1B00938808 /* XMFactory.m in Sources */,
 				8E12B975277D8E2A00938808 /* XhwCamera.m in Sources */,
 				8EBCE2FB2786E4CB001AF53D /* Dog.swift in Sources */,
+				8EBCE32F278C26E9001AF53D /* TreeComponent.swift in Sources */,
 				8EBCE31C278992F1001AF53D /* System.swift in Sources */,
 				8E12B93F277D5E8900938808 /* SceneDelegate.m in Sources */,
 			);

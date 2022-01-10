@@ -59,13 +59,44 @@ import Foundation
 //        proxy.buyMac()
         
         // 享元模式
-        var fFactory = FlyWeightFactory()
-        let fly1 = fFactory.getFlyWeight(state: "one") as! ConcreteFlyWeight
-        let fly2 = fFactory.getFlyWeight(state: "two")
-        let fly3 = fFactory.getFlyWeight(state: "one") as! ConcreteFlyWeight
-        fly1.operate(outState: "111")
-        fly2.operate(outState: "222")
-        fly3.operate(outState: "333")
-        print(fly1 == fly3)
+//        var fFactory = FlyWeightFactory()
+//        let fly1 = fFactory.getFlyWeight(state: "one") as! ConcreteFlyWeight
+//        let fly2 = fFactory.getFlyWeight(state: "two")
+//        let fly3 = fFactory.getFlyWeight(state: "one") as! ConcreteFlyWeight
+//        fly1.operate(outState: "111")
+//        fly2.operate(outState: "222")
+//        fly3.operate(outState: "333")
+//        print(fly1 == fly3)
+        
+        // 组合模式
+//        var rnode = TreeComposite(name: "root node")
+//        let node1 = TreeComposite(name: "node 1")
+//        let node2 = TreeComposite(name: "node 2")
+//        var node3 = TreeComposite(name: "node 3")
+//        let node3_1 = TreeComposite(name: "node 3_1")
+//        let node3_2 = TreeComposite(name: "node 3_2")
+//        node3.addComponent(node3_1)
+//        node3.addComponent(node3_2)
+//        let leaf = TreeLeaf(name: "leaf")
+//        rnode.addComponent(node1)
+//        rnode.addComponent(node2)
+//        rnode.addComponent(node3)
+//        rnode.addComponent(leaf)
+//        rnode.operateDepth(depth: 0)
+        
+        // 命令模式
+        let receiver = TV()
+        let commandOpen = TVOpenCommand(tv: receiver)
+        let commandClose = TVCloseCommand(tv: receiver)
+        let invoker = TVInvoker(openCommand: commandOpen, closeCommand: commandClose)
+        invoker.openTV()
+        invoker.closeTV()
+        
+        var invoker2 = TVInvoker()
+        invoker2.addCommand(commandOpen, for: "o")
+        invoker2.addCommand(commandClose, for: "c")
+        invoker2.invoke(key: "o")
+        invoker2.invoke(key: "c")
+        
     }
 }
