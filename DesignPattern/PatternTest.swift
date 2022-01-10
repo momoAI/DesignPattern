@@ -49,5 +49,23 @@ import Foundation
 //        sugarCoffee.sold()
 //        milkCoffee.sold()
 //        sugarMilkCoffee.sold()
+        
+        // 外观模式
+//        let system = System()
+//        system.start()
+        
+        // 代理模式
+//        let proxy = BuyerProxy()
+//        proxy.buyMac()
+        
+        // 享元模式
+        var fFactory = FlyWeightFactory()
+        let fly1 = fFactory.getFlyWeight(state: "one") as! ConcreteFlyWeight
+        let fly2 = fFactory.getFlyWeight(state: "two")
+        let fly3 = fFactory.getFlyWeight(state: "one") as! ConcreteFlyWeight
+        fly1.operate(outState: "111")
+        fly2.operate(outState: "222")
+        fly3.operate(outState: "333")
+        print(fly1 == fly3)
     }
 }

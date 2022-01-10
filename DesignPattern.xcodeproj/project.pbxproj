@@ -46,6 +46,14 @@
 		8EBCE313278982D4001AF53D /* Decorator.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EBCE312278982D4001AF53D /* Decorator.png */; };
 		8EBCE31527898342001AF53D /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE31427898342001AF53D /* Coffee.swift */; };
 		8EBCE317278984CA001AF53D /* Burden.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE316278984CA001AF53D /* Burden.swift */; };
+		8EBCE31A27899229001AF53D /* facade.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EBCE31927899229001AF53D /* facade.png */; };
+		8EBCE31C278992F1001AF53D /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE31B278992F1001AF53D /* System.swift */; };
+		8EBCE31F278999F3001AF53D /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE31E278999F3001AF53D /* Subject.swift */; };
+		8EBCE321278999FC001AF53D /* Proxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE320278999FC001AF53D /* Proxy.swift */; };
+		8EBCE32327899A0E001AF53D /* proxy.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EBCE32227899A0E001AF53D /* proxy.png */; };
+		8EBCE326278C0164001AF53D /* FlyWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE325278C0164001AF53D /* FlyWeight.swift */; };
+		8EBCE328278C0176001AF53D /* flyweight.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EBCE327278C0176001AF53D /* flyweight.png */; };
+		8EBCE32A278C025A001AF53D /* FlyWeighntFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE329278C025A001AF53D /* FlyWeighntFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +135,14 @@
 		8EBCE312278982D4001AF53D /* Decorator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Decorator.png; sourceTree = "<group>"; };
 		8EBCE31427898342001AF53D /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
 		8EBCE316278984CA001AF53D /* Burden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Burden.swift; sourceTree = "<group>"; };
+		8EBCE31927899229001AF53D /* facade.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facade.png; sourceTree = "<group>"; };
+		8EBCE31B278992F1001AF53D /* System.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
+		8EBCE31E278999F3001AF53D /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
+		8EBCE320278999FC001AF53D /* Proxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proxy.swift; sourceTree = "<group>"; };
+		8EBCE32227899A0E001AF53D /* proxy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = proxy.png; sourceTree = "<group>"; };
+		8EBCE325278C0164001AF53D /* FlyWeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyWeight.swift; sourceTree = "<group>"; };
+		8EBCE327278C0176001AF53D /* flyweight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flyweight.png; sourceTree = "<group>"; };
+		8EBCE329278C025A001AF53D /* FlyWeighntFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyWeighntFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +193,9 @@
 		8E12B939277D5E8900938808 /* DesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				8EBCE324278C0110001AF53D /* FlyWeight */,
+				8EBCE31D278999B1001AF53D /* Proxy */,
+				8EBCE3182789921C001AF53D /* Facade */,
 				8EBCE311278982B7001AF53D /* DecoratorPattern */,
 				8EBCE30427895B63001AF53D /* BridgePattern */,
 				8EBCE2F72786E2F0001AF53D /* AdapterPattern */,
@@ -293,6 +312,35 @@
 			name = DecoratorPattern;
 			sourceTree = "<group>";
 		};
+		8EBCE3182789921C001AF53D /* Facade */ = {
+			isa = PBXGroup;
+			children = (
+				8EBCE31927899229001AF53D /* facade.png */,
+				8EBCE31B278992F1001AF53D /* System.swift */,
+			);
+			path = Facade;
+			sourceTree = "<group>";
+		};
+		8EBCE31D278999B1001AF53D /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				8EBCE32227899A0E001AF53D /* proxy.png */,
+				8EBCE31E278999F3001AF53D /* Subject.swift */,
+				8EBCE320278999FC001AF53D /* Proxy.swift */,
+			);
+			name = Proxy;
+			sourceTree = "<group>";
+		};
+		8EBCE324278C0110001AF53D /* FlyWeight */ = {
+			isa = PBXGroup;
+			children = (
+				8EBCE327278C0176001AF53D /* flyweight.png */,
+				8EBCE325278C0164001AF53D /* FlyWeight.swift */,
+				8EBCE329278C025A001AF53D /* FlyWeighntFactory.swift */,
+			);
+			path = FlyWeight;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -397,12 +445,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EBCE328278C0176001AF53D /* flyweight.png in Resources */,
 				8E12B94A277D5E8C00938808 /* LaunchScreen.storyboard in Resources */,
 				8EBCE3012786E64C001AF53D /* builder.png in Resources */,
+				8EBCE32327899A0E001AF53D /* proxy.png in Resources */,
 				8E12B947277D5E8C00938808 /* Assets.xcassets in Resources */,
 				8EBCE30B27895C9F001AF53D /* factory-abstrac.png in Resources */,
 				8EBCE30A27895C9F001AF53D /* factory-method.png in Resources */,
 				8E12B945277D5E8900938808 /* Main.storyboard in Resources */,
+				8EBCE31A27899229001AF53D /* facade.png in Resources */,
 				8EBCE30C27895C9F001AF53D /* factory-simple.png in Resources */,
 				8EBCE313278982D4001AF53D /* Decorator.png in Resources */,
 				8EBCE30627895BB1001AF53D /* bridge.png in Resources */,
@@ -439,14 +490,18 @@
 				8EBCE2F1278692FC001AF53D /* MealBuilder.swift in Sources */,
 				8E12B978277D8E4900938808 /* AzyCamera.m in Sources */,
 				8E12B98E277DAAB400938808 /* HPFactory.m in Sources */,
+				8EBCE321278999FC001AF53D /* Proxy.swift in Sources */,
 				8E12B93C277D5E8900938808 /* AppDelegate.m in Sources */,
 				8EBCE2FD2786E51D001AF53D /* Cat.swift in Sources */,
 				8EBCE2F427869891001AF53D /* MealOrder.swift in Sources */,
 				8E12B988277DA16F00938808 /* XMMouse.m in Sources */,
 				8E12B985277DA09500938808 /* HPKeyboard.m in Sources */,
+				8EBCE326278C0164001AF53D /* FlyWeight.swift in Sources */,
 				8EBCE31527898342001AF53D /* Coffee.swift in Sources */,
 				8E12B94D277D5E8C00938808 /* main.m in Sources */,
+				8EBCE32A278C025A001AF53D /* FlyWeighntFactory.swift in Sources */,
 				8E12B971277D8DED00938808 /* CameraFactory.m in Sources */,
+				8EBCE31F278999F3001AF53D /* Subject.swift in Sources */,
 				8E12B982277DA08300938808 /* HPMouse.m in Sources */,
 				8EBCE3032786E790001AF53D /* SoundAdapter.swift in Sources */,
 				8EBCE2EF2786920D001AF53D /* Meal.swift in Sources */,
@@ -456,6 +511,7 @@
 				8E12B991277DAD1B00938808 /* XMFactory.m in Sources */,
 				8E12B975277D8E2A00938808 /* XhwCamera.m in Sources */,
 				8EBCE2FB2786E4CB001AF53D /* Dog.swift in Sources */,
+				8EBCE31C278992F1001AF53D /* System.swift in Sources */,
 				8E12B93F277D5E8900938808 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
