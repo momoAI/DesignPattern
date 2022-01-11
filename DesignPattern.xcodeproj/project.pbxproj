@@ -61,6 +61,12 @@
 		8EBCE336278C34E3001AF53D /* TVCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE335278C34E3001AF53D /* TVCommand.swift */; };
 		8EBCE338278C35B1001AF53D /* TVInvoker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE337278C35B1001AF53D /* TVInvoker.swift */; };
 		8EBCE33A278C3736001AF53D /* TV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE339278C3736001AF53D /* TV.swift */; };
+		8EBCE33D278D32E1001AF53D /* Mediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE33C278D32E1001AF53D /* Mediator.swift */; };
+		8EBCE33F278D334E001AF53D /* Colleague.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE33E278D334E001AF53D /* Colleague.swift */; };
+		8EBCE341278D578C001AF53D /* mediator.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EBCE340278D578C001AF53D /* mediator.png */; };
+		8EBCE344278D6561001AF53D /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE343278D6561001AF53D /* Observer.swift */; };
+		8EBCE346278D6588001AF53D /* ObSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE345278D6588001AF53D /* ObSubject.swift */; };
+		8EBCE348278D7803001AF53D /* observer.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EBCE347278D7803001AF53D /* observer.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,6 +163,12 @@
 		8EBCE335278C34E3001AF53D /* TVCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCommand.swift; sourceTree = "<group>"; };
 		8EBCE337278C35B1001AF53D /* TVInvoker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVInvoker.swift; sourceTree = "<group>"; };
 		8EBCE339278C3736001AF53D /* TV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TV.swift; sourceTree = "<group>"; };
+		8EBCE33C278D32E1001AF53D /* Mediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mediator.swift; sourceTree = "<group>"; };
+		8EBCE33E278D334E001AF53D /* Colleague.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colleague.swift; sourceTree = "<group>"; };
+		8EBCE340278D578C001AF53D /* mediator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mediator.png; sourceTree = "<group>"; };
+		8EBCE343278D6561001AF53D /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		8EBCE345278D6588001AF53D /* ObSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObSubject.swift; sourceTree = "<group>"; };
+		8EBCE347278D7803001AF53D /* observer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = observer.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +219,8 @@
 		8E12B939277D5E8900938808 /* DesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				8EBCE342278D6546001AF53D /* Observer */,
+				8EBCE33B278D32C2001AF53D /* Mediator */,
 				8EBCE332278C34B5001AF53D /* Command */,
 				8EBCE32B278C26AA001AF53D /* Composite */,
 				8EBCE324278C0110001AF53D /* FlyWeight */,
@@ -378,6 +392,26 @@
 			path = Command;
 			sourceTree = "<group>";
 		};
+		8EBCE33B278D32C2001AF53D /* Mediator */ = {
+			isa = PBXGroup;
+			children = (
+				8EBCE340278D578C001AF53D /* mediator.png */,
+				8EBCE33C278D32E1001AF53D /* Mediator.swift */,
+				8EBCE33E278D334E001AF53D /* Colleague.swift */,
+			);
+			name = Mediator;
+			sourceTree = "<group>";
+		};
+		8EBCE342278D6546001AF53D /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				8EBCE347278D7803001AF53D /* observer.png */,
+				8EBCE343278D6561001AF53D /* Observer.swift */,
+				8EBCE345278D6588001AF53D /* ObSubject.swift */,
+			);
+			path = Observer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -486,8 +520,10 @@
 				8E12B94A277D5E8C00938808 /* LaunchScreen.storyboard in Resources */,
 				8EBCE3012786E64C001AF53D /* builder.png in Resources */,
 				8EBCE32D278C26B6001AF53D /* composite.png in Resources */,
+				8EBCE341278D578C001AF53D /* mediator.png in Resources */,
 				8EBCE334278C34C6001AF53D /* command.png in Resources */,
 				8EBCE32327899A0E001AF53D /* proxy.png in Resources */,
+				8EBCE348278D7803001AF53D /* observer.png in Resources */,
 				8E12B947277D5E8C00938808 /* Assets.xcassets in Resources */,
 				8EBCE30B27895C9F001AF53D /* factory-abstrac.png in Resources */,
 				8EBCE30A27895C9F001AF53D /* factory-method.png in Resources */,
@@ -530,17 +566,21 @@
 				8E12B978277D8E4900938808 /* AzyCamera.m in Sources */,
 				8E12B98E277DAAB400938808 /* HPFactory.m in Sources */,
 				8EBCE321278999FC001AF53D /* Proxy.swift in Sources */,
+				8EBCE33F278D334E001AF53D /* Colleague.swift in Sources */,
 				8E12B93C277D5E8900938808 /* AppDelegate.m in Sources */,
 				8EBCE2FD2786E51D001AF53D /* Cat.swift in Sources */,
 				8EBCE2F427869891001AF53D /* MealOrder.swift in Sources */,
+				8EBCE344278D6561001AF53D /* Observer.swift in Sources */,
 				8EBCE338278C35B1001AF53D /* TVInvoker.swift in Sources */,
 				8E12B988277DA16F00938808 /* XMMouse.m in Sources */,
+				8EBCE346278D6588001AF53D /* ObSubject.swift in Sources */,
 				8E12B985277DA09500938808 /* HPKeyboard.m in Sources */,
 				8EBCE326278C0164001AF53D /* FlyWeight.swift in Sources */,
 				8EBCE31527898342001AF53D /* Coffee.swift in Sources */,
 				8E12B94D277D5E8C00938808 /* main.m in Sources */,
 				8EBCE32A278C025A001AF53D /* FlyWeighntFactory.swift in Sources */,
 				8EBCE331278C2740001AF53D /* TreeComposite.swift in Sources */,
+				8EBCE33D278D32E1001AF53D /* Mediator.swift in Sources */,
 				8E12B971277D8DED00938808 /* CameraFactory.m in Sources */,
 				8EBCE31F278999F3001AF53D /* Subject.swift in Sources */,
 				8E12B982277DA08300938808 /* HPMouse.m in Sources */,

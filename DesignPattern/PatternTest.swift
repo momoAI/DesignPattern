@@ -85,18 +85,36 @@ import Foundation
 //        rnode.operateDepth(depth: 0)
         
         // 命令模式
-        let receiver = TV()
-        let commandOpen = TVOpenCommand(tv: receiver)
-        let commandClose = TVCloseCommand(tv: receiver)
-        let invoker = TVInvoker(openCommand: commandOpen, closeCommand: commandClose)
-        invoker.openTV()
-        invoker.closeTV()
+//        let receiver = TV()
+//        let commandOpen = TVOpenCommand(tv: receiver)
+//        let commandClose = TVCloseCommand(tv: receiver)
+//        let invoker = TVInvoker(openCommand: commandOpen, closeCommand: commandClose)
+//        invoker.openTV()
+//        invoker.closeTV()
+//
+//        var invoker2 = TVInvoker()
+//        invoker2.addCommand(commandOpen, for: "o")
+//        invoker2.addCommand(commandClose, for: "c")
+//        invoker2.invoke(key: "o")
+//        invoker2.invoke(key: "c")
         
-        var invoker2 = TVInvoker()
-        invoker2.addCommand(commandOpen, for: "o")
-        invoker2.addCommand(commandClose, for: "c")
-        invoker2.invoke(key: "o")
-        invoker2.invoke(key: "c")
+        // 中介者模式
+//        let mediator = HouseMediator()
+//        let owner = Owner(name: "fangdong", mediator: mediator)
+//        let tenant = Tenant(name: "yang", mediator: mediator)
+//        mediator.register(user: owner, id: 1)
+//        mediator.register(user: tenant, id: 2)
+//        tenant.contact(info: "wanna a house: 5 room, >100m²", id: 1)
+//        owner.contact(info: "i have", id: 2)
         
+        // 观察者模式
+//        let subject = ConcreteSubject()
+//        let observer1 = ConcreteObserverA()
+//        let observer2 = ConcreteObserverB()
+//        subject.add(observer1)
+//        subject.add(observer2)
+//        subject.state = "first"
+//        subject.state = "second"
+
     }
 }
