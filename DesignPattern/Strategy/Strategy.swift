@@ -7,37 +7,37 @@
 
 import Foundation
 
-class Strategy<T> {
-    init() {
-        if type(of: self) == Strategy.self {
-            print("AbstractClass init！")
-            fatalError("can't init")
-        }
-    }
-
-    func algorithm(a: T, b: T) -> T { return a }
-}
-
-class AddStrategy<T: Numeric> : Strategy<T> {
-    override func algorithm(a: T, b: T) -> T {
-        return a + b
-    }
-
-}
-
-class SubStrategy<T: Numeric> : Strategy<T> {
-    override func algorithm(a: T, b: T) -> T {
-        return a - b
-    }
-
-}
-
-class MulStrategy<T: Numeric> : Strategy<T> {
-    override func algorithm(a: T, b: T) -> T {
-        return a * b
-    }
-
-}
+//class Strategy<T> {
+//    init() {
+//        if type(of: self) == Strategy.self {
+//            print("AbstractClass init！")
+//            fatalError("can't init")
+//        }
+//    }
+//
+//    func algorithm(a: T, b: T) -> T { return a }
+//}
+//
+//class AddStrategy<T: Numeric> : Strategy<T> {
+//    override func algorithm(a: T, b: T) -> T {
+//        return a + b
+//    }
+//
+//}
+//
+//class SubStrategy<T: Numeric> : Strategy<T> {
+//    override func algorithm(a: T, b: T) -> T {
+//        return a - b
+//    }
+//
+//}
+//
+//class MulStrategy<T: Numeric> : Strategy<T> {
+//    override func algorithm(a: T, b: T) -> T {
+//        return a * b
+//    }
+//
+//}
 
 //struct DivStrategy<T: Numeric> : Strategy {
 //    func algorithm(a: T, b: T) -> T {
@@ -46,6 +46,32 @@ class MulStrategy<T: Numeric> : Strategy<T> {
 //
 //}
 
+protocol Strategy {
+    associatedtype T
+
+    func algorithm(a: T, b: T) -> T
+}
+
+struct AddStrategy<T: Numeric> : Strategy {
+    func algorithm(a: T, b: T) -> T {
+        return a + b
+    }
+
+}
+
+struct SubStrategy<T: Numeric> : Strategy {
+    func algorithm(a: T, b: T) -> T {
+        return a - b
+    }
+
+}
+
+struct MulStrategy<T: Numeric> : Strategy {
+    func algorithm(a: T, b: T) -> T {
+        return a * b
+    }
+
+}
 
 //protocol Strategy {
 //    associatedtype T
