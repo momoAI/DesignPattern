@@ -116,5 +116,32 @@ import Foundation
 //        subject.state = "first"
 //        subject.state = "second"
 
+        // 状态模式
+//        var room = Room()
+//        room.book()
+//        room.checkOut()
+//        room.book()
+//        room.checkIn()
+        
+        // 策略模式
+//        let strategy1 = AddStrategy<Int>()
+//        let strategy2 = MulStrategy<Double>()
+//        let strategy3 = MulStrategy<Int>()
+//        var context1 = STContext(strategy: strategy1)
+//        print(context1.operate(a: 1, b: 2))
+//        context1.strategy = strategy3
+//        print(context1.operate(a: 1, b: 2))
+//        let context2 = STContext(strategy: strategy2)
+//        print(context2.operate(a: 1.1, b: 2.1))
+//
+////        let strategy1 = StrategyWraper<Int>(type: 0)
+////        let strategy2 = StrategyWraper<Double>(type: 2)
+////        let strategy3 = StrategyWraper<Int>(type: 2)
+////        var context1 = STContext(strategy: strategy1)
+////        print(context1.operate(a: 1, b: 2))
+////        context1.strategy = strategy3
+////        print(context1.operate(a: 1, b: 2))
+////        let context2 = STContext(strategy: strategy2)
+////        print(context2.operate(a: 1.1, b: 2.1))
     }
 }

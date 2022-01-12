@@ -67,6 +67,12 @@
 		8EBCE344278D6561001AF53D /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE343278D6561001AF53D /* Observer.swift */; };
 		8EBCE346278D6588001AF53D /* ObSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE345278D6588001AF53D /* ObSubject.swift */; };
 		8EBCE348278D7803001AF53D /* observer.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EBCE347278D7803001AF53D /* observer.png */; };
+		8EBCE34B278D8AB7001AF53D /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE34A278D8AB7001AF53D /* State.swift */; };
+		8EBCE34D278D8ADD001AF53D /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE34C278D8ADD001AF53D /* Context.swift */; };
+		8EBCE34F278E5F5B001AF53D /* state.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EBCE34E278E5F5B001AF53D /* state.png */; };
+		8EBCE352278E67AD001AF53D /* Strategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE351278E67AD001AF53D /* Strategy.swift */; };
+		8EBCE354278E67E5001AF53D /* STContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE353278E67E5001AF53D /* STContext.swift */; };
+		8EBCE356278E8409001AF53D /* strategy.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EBCE355278E8409001AF53D /* strategy.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -169,6 +175,12 @@
 		8EBCE343278D6561001AF53D /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 		8EBCE345278D6588001AF53D /* ObSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObSubject.swift; sourceTree = "<group>"; };
 		8EBCE347278D7803001AF53D /* observer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = observer.png; sourceTree = "<group>"; };
+		8EBCE34A278D8AB7001AF53D /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		8EBCE34C278D8ADD001AF53D /* Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
+		8EBCE34E278E5F5B001AF53D /* state.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = state.png; sourceTree = "<group>"; };
+		8EBCE351278E67AD001AF53D /* Strategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strategy.swift; sourceTree = "<group>"; };
+		8EBCE353278E67E5001AF53D /* STContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STContext.swift; sourceTree = "<group>"; };
+		8EBCE355278E8409001AF53D /* strategy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = strategy.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +231,8 @@
 		8E12B939277D5E8900938808 /* DesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				8EBCE350278E679B001AF53D /* Strategy */,
+				8EBCE349278D8AA8001AF53D /* State */,
 				8EBCE342278D6546001AF53D /* Observer */,
 				8EBCE33B278D32C2001AF53D /* Mediator */,
 				8EBCE332278C34B5001AF53D /* Command */,
@@ -412,6 +426,26 @@
 			path = Observer;
 			sourceTree = "<group>";
 		};
+		8EBCE349278D8AA8001AF53D /* State */ = {
+			isa = PBXGroup;
+			children = (
+				8EBCE34E278E5F5B001AF53D /* state.png */,
+				8EBCE34A278D8AB7001AF53D /* State.swift */,
+				8EBCE34C278D8ADD001AF53D /* Context.swift */,
+			);
+			name = State;
+			sourceTree = "<group>";
+		};
+		8EBCE350278E679B001AF53D /* Strategy */ = {
+			isa = PBXGroup;
+			children = (
+				8EBCE355278E8409001AF53D /* strategy.png */,
+				8EBCE351278E67AD001AF53D /* Strategy.swift */,
+				8EBCE353278E67E5001AF53D /* STContext.swift */,
+			);
+			path = Strategy;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -517,12 +551,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EBCE328278C0176001AF53D /* flyweight.png in Resources */,
+				8EBCE34F278E5F5B001AF53D /* state.png in Resources */,
 				8E12B94A277D5E8C00938808 /* LaunchScreen.storyboard in Resources */,
 				8EBCE3012786E64C001AF53D /* builder.png in Resources */,
 				8EBCE32D278C26B6001AF53D /* composite.png in Resources */,
 				8EBCE341278D578C001AF53D /* mediator.png in Resources */,
 				8EBCE334278C34C6001AF53D /* command.png in Resources */,
 				8EBCE32327899A0E001AF53D /* proxy.png in Resources */,
+				8EBCE356278E8409001AF53D /* strategy.png in Resources */,
 				8EBCE348278D7803001AF53D /* observer.png in Resources */,
 				8E12B947277D5E8C00938808 /* Assets.xcassets in Resources */,
 				8EBCE30B27895C9F001AF53D /* factory-abstrac.png in Resources */,
@@ -560,10 +596,12 @@
 				8EBCE2F627869BB1001AF53D /* PatternTest.swift in Sources */,
 				8E12B97B277D91C600938808 /* CameraEnty.m in Sources */,
 				8EBCE2F92786E47A001AF53D /* SoundTarget.swift in Sources */,
+				8EBCE34D278D8ADD001AF53D /* Context.swift in Sources */,
 				8EBCE31027896758001AF53D /* Road.swift in Sources */,
 				8E12B942277D5E8900938808 /* ViewController.m in Sources */,
 				8EBCE2F1278692FC001AF53D /* MealBuilder.swift in Sources */,
 				8E12B978277D8E4900938808 /* AzyCamera.m in Sources */,
+				8EBCE34B278D8AB7001AF53D /* State.swift in Sources */,
 				8E12B98E277DAAB400938808 /* HPFactory.m in Sources */,
 				8EBCE321278999FC001AF53D /* Proxy.swift in Sources */,
 				8EBCE33F278D334E001AF53D /* Colleague.swift in Sources */,
@@ -582,6 +620,7 @@
 				8EBCE331278C2740001AF53D /* TreeComposite.swift in Sources */,
 				8EBCE33D278D32E1001AF53D /* Mediator.swift in Sources */,
 				8E12B971277D8DED00938808 /* CameraFactory.m in Sources */,
+				8EBCE352278E67AD001AF53D /* Strategy.swift in Sources */,
 				8EBCE31F278999F3001AF53D /* Subject.swift in Sources */,
 				8E12B982277DA08300938808 /* HPMouse.m in Sources */,
 				8EBCE3032786E790001AF53D /* SoundAdapter.swift in Sources */,
@@ -592,6 +631,7 @@
 				8EBCE336278C34E3001AF53D /* TVCommand.swift in Sources */,
 				8EBCE33A278C3736001AF53D /* TV.swift in Sources */,
 				8E12B991277DAD1B00938808 /* XMFactory.m in Sources */,
+				8EBCE354278E67E5001AF53D /* STContext.swift in Sources */,
 				8E12B975277D8E2A00938808 /* XhwCamera.m in Sources */,
 				8EBCE2FB2786E4CB001AF53D /* Dog.swift in Sources */,
 				8EBCE32F278C26E9001AF53D /* TreeComponent.swift in Sources */,
