@@ -6,11 +6,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CameraEnty.h"
+#import "CameraProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AzyCamera : CameraEnty
+@interface AzyCamera : NSObject<CameraProtocol>
 
 @end
 

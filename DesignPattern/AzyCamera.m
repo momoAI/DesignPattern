@@ -10,11 +10,11 @@
 @implementation AzyCamera
 
 - (void)connect {
-    NSLog(@"azy connect");
+    NSLog(@"azy camera connect");
 }
 
 - (void)take {
-    NSLog(@"azy take");
+    NSLog(@"azy camera take");
 }
 
 @end

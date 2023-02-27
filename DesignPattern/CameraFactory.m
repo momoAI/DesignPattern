@@ -9,7 +9,7 @@
 
 @implementation CameraFactory
 
-+ (id<Camera>)createCameraWifi:(NSString *)wifi {
++ (id<CameraProtocol>)createCameraWifi:(NSString *)wifi {
     if ([wifi isEqualToString:@"xhw"]) {
         return [[XhwCamera alloc] init];
     } else if ([wifi isEqualToString:@"azy"]) {

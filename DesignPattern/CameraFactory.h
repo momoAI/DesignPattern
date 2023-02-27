@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CameraFactory : NSObject
 
-+ (id<Camera>)createCameraWifi:(NSString *)wifi;
++ (id<CameraProtocol>)createCameraWifi:(NSString *)wifi;
 
 @end
 

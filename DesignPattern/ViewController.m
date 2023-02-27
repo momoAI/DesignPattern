@@ -8,10 +8,11 @@
 #import "ViewController.h"
 #import <objc/runtime.h>
 #import "CameraFactory.h"
-#import "CameraEnty.h"
-#import "XMFactory.h"
-#import "HPFactory.h"
+#import "AzyFactory.h"
+#import "XhwFactory.h"
 #import "DesignPattern-Swift.h"
+#import "XhwCameraFactory.h"
+#import "AzyCameraFactory.h"
 
 @interface ViewController ()
 
@@ -21,51 +22,55 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view.
     
-//    id bt = [UIButton alloc];
-//    UIButton *bt0 = [bt init];
+//    id btAlloc = [UIButton alloc];
+//    UIButton *bt0 = [btAlloc init];
 //    UIButton *bt1 = [UIButton buttonWithType:UIButtonTypeSystem];
 //    UIButton *bt2 = [UIButton buttonWithType:UIButtonTypeContactAdd];
 //
-//    NSLog(@"%@", NSStringFromClass(object_getClass(bt)));
-//    NSLog(@"%@", NSStringFromClass(object_getClass(bt0)));
-//    NSLog(@"%@", NSStringFromClass(object_getClass(bt1)));
-//    NSLog(@"%@", NSStringFromClass(object_getClass(bt2)));
+//    NSLog(@"%@", NSStringFromClass([btAlloc class]));
+//    NSLog(@"%@", NSStringFromClass([bt0 class]));
+//    NSLog(@"%@", NSStringFromClass([bt1 class]));
+//    NSLog(@"%@", NSStringFromClass([bt2 class]));
     
-    
-//    id arr = [NSArray alloc];
-//    id marr = [NSMutableArray alloc];
-//    NSArray *arr1 = [arr init];
-//    NSMutableArray *marr1 = [marr init];
+//    id arrAlloc = [NSArray alloc];
+//    NSArray *arr = [arrAlloc init];
+//    id marrAlloc = [NSMutableArray alloc];
+//    NSMutableArray *marr = [marrAlloc init];
+//    NSLog(@"%@", NSStringFromClass([arrAlloc class]));
 //    NSLog(@"%@", NSStringFromClass([arr class]));
-//    NSLog(@"%@", NSStringFromClass([arr1 class]));
+//    NSLog(@"%@", NSStringFromClass([marrAlloc class]));
 //    NSLog(@"%@", NSStringFromClass([marr class]));
-//    NSLog(@"%@", NSStringFromClass([marr1 class]));
     
-    
-//    NSNumber *num1 = [NSNumber numberWithInt:1];
-//    NSNumber *num2 = [NSNumber numberWithBool:YES];
-//    NSNumber *num3 = [NSNumber numberWithLongLong:111111111111111111];
+//
+//    id numAlloc = [NSNumber alloc];
+//    NSNumber *num1 = [numAlloc initWithInt:1];
+//    NSNumber *num2 = [numAlloc initWithBool:YES];
+//    NSNumber *num3 = [numAlloc initWithLong:111111111111111111];
+//    NSLog(@"%@", [numAlloc class]);
 //    NSLog(@"%@", [num1 class]);
 //    NSLog(@"%@", [num2 class]);
-//    NSLog(@"%@", object_getClass(num3));
+//    NSLog(@"%@", [num3 class]);
     
     // 简单工厂
-//    id<Camera> camera = [CameraFactory createCameraWifi:@"xhw"];
+//    id<CameraProtocol> camera = [CameraFactory createCameraWifi:@"xhw"];
 //    [camera connect];
 //    [camera take];
-    
-//    CameraEnty *camera = [CameraEnty cameraWithWifi:@"xhw"];
+     
+    // 工厂方法
+//    id<CameraProtocol>camera = [XhwCameraFactory createCamera];
 //    [camera connect];
 //    [camera take];
     
     // 抽象工厂
-//    XMFactory *fc = [[XMFactory alloc] init];
-//    id<Mouse> mouse = [fc createMouse];
-//    id<Keyboard> keyboard = [fc createKeyboard];
-//    [mouse mouseClick];
-//    [keyboard keyboardPan];
+//    AzyFactory *fc = [[AzyFactory alloc] init];
+//    id<CameraProtocol> camera = [fc createCamera];
+//    [camera connect];
+//    id<SpeakerProtocol> speaker = [fc createSpeaker];
+//    [speaker connect];
+//    [speaker play];
     
     [PatternTest test];
 }

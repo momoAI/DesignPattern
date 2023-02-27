@@ -10,11 +10,11 @@
 @implementation XhwCamera
 
 - (void)connect {
-    NSLog(@"xhw connect");
+    NSLog(@"xhw camera connect");
 }
 
 - (void)take {
-    NSLog(@"xhw take");
+    NSLog(@"xhw camera take");
 }
 
 @end

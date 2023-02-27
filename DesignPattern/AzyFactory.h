@@ -1,18 +1,16 @@
 //
-//  CameraEnty.h
+//  AzyFactory.h
 //  DesignPattern
 //
 //  Created by luxu on 2021/12/30.
 //
 
 #import <Foundation/Foundation.h>
-#import "Camera.h"
+#import "PeripheralFactory.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CameraEnty : NSObject<Camera>
-
-+ (instancetype)cameraWithWifi:(NSString *)wifi;
+@interface AzyFactory : NSObject<PeripheralFactory>
 
 @end
 

@@ -20,13 +20,8 @@
 		8E12B971277D8DED00938808 /* CameraFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E12B970277D8DED00938808 /* CameraFactory.m */; };
 		8E12B975277D8E2A00938808 /* XhwCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E12B974277D8E2A00938808 /* XhwCamera.m */; };
 		8E12B978277D8E4900938808 /* AzyCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E12B977277D8E4900938808 /* AzyCamera.m */; };
-		8E12B97B277D91C600938808 /* CameraEnty.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E12B97A277D91C600938808 /* CameraEnty.m */; };
-		8E12B982277DA08300938808 /* HPMouse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E12B981277DA08300938808 /* HPMouse.m */; };
-		8E12B985277DA09500938808 /* HPKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E12B984277DA09500938808 /* HPKeyboard.m */; };
-		8E12B988277DA16F00938808 /* XMMouse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E12B987277DA16F00938808 /* XMMouse.m */; };
-		8E12B98B277DA17B00938808 /* XMKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E12B98A277DA17B00938808 /* XMKeyboard.m */; };
-		8E12B98E277DAAB400938808 /* HPFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E12B98D277DAAB400938808 /* HPFactory.m */; };
-		8E12B991277DAD1B00938808 /* XMFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E12B990277DAD1B00938808 /* XMFactory.m */; };
+		8E12B98E277DAAB400938808 /* XhwFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E12B98D277DAAB400938808 /* XhwFactory.m */; };
+		8E12B991277DAD1B00938808 /* AzyFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E12B990277DAD1B00938808 /* AzyFactory.m */; };
 		8EBCE2EF2786920D001AF53D /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE2EE2786920D001AF53D /* Meal.swift */; };
 		8EBCE2F1278692FC001AF53D /* MealBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE2F0278692FC001AF53D /* MealBuilder.swift */; };
 		8EBCE2F427869891001AF53D /* MealOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE2F327869891001AF53D /* MealOrder.swift */; };
@@ -38,7 +33,6 @@
 		8EBCE3012786E64C001AF53D /* builder.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EBCE3002786E64C001AF53D /* builder.png */; };
 		8EBCE3032786E790001AF53D /* SoundAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE3022786E790001AF53D /* SoundAdapter.swift */; };
 		8EBCE30627895BB1001AF53D /* bridge.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EBCE30527895BB1001AF53D /* bridge.png */; };
-		8EBCE30A27895C9F001AF53D /* factory-method.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EBCE30727895C9F001AF53D /* factory-method.png */; };
 		8EBCE30B27895C9F001AF53D /* factory-abstrac.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EBCE30827895C9F001AF53D /* factory-abstrac.png */; };
 		8EBCE30C27895C9F001AF53D /* factory-simple.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EBCE30927895C9F001AF53D /* factory-simple.png */; };
 		8EBCE30E2789660E001AF53D /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE30D2789660E001AF53D /* Vehicle.swift */; };
@@ -73,6 +67,11 @@
 		8EBCE352278E67AD001AF53D /* Strategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE351278E67AD001AF53D /* Strategy.swift */; };
 		8EBCE354278E67E5001AF53D /* STContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE353278E67E5001AF53D /* STContext.swift */; };
 		8EBCE356278E8409001AF53D /* strategy.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EBCE355278E8409001AF53D /* strategy.png */; };
+		CED4CD7629A8915000F5C9BD /* factory-method.png in Resources */ = {isa = PBXBuildFile; fileRef = CED4CD7529A8915000F5C9BD /* factory-method.png */; };
+		CED4CD7D29A89B0200F5C9BD /* XhwCameraFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4CD7C29A89B0200F5C9BD /* XhwCameraFactory.m */; };
+		CED4CD8029A89B1000F5C9BD /* AzyCameraFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4CD7F29A89B1000F5C9BD /* AzyCameraFactory.m */; };
+		CED4CD8329AC8F2700F5C9BD /* XhwSpeaker.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4CD8229AC8F2700F5C9BD /* XhwSpeaker.m */; };
+		CED4CD8629AC8F4300F5C9BD /* AzySpeaker.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4CD8529AC8F4300F5C9BD /* AzySpeaker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,28 +111,17 @@
 		8E12B962277D5E8C00938808 /* DesignPatternUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesignPatternUITestsLaunchTests.m; sourceTree = "<group>"; };
 		8E12B96F277D8DED00938808 /* CameraFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraFactory.h; sourceTree = "<group>"; };
 		8E12B970277D8DED00938808 /* CameraFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraFactory.m; sourceTree = "<group>"; };
-		8E12B972277D8E0F00938808 /* Camera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
+		8E12B972277D8E0F00938808 /* CameraProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraProtocol.h; sourceTree = "<group>"; };
 		8E12B973277D8E2A00938808 /* XhwCamera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XhwCamera.h; sourceTree = "<group>"; };
 		8E12B974277D8E2A00938808 /* XhwCamera.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XhwCamera.m; sourceTree = "<group>"; };
 		8E12B976277D8E4900938808 /* AzyCamera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AzyCamera.h; sourceTree = "<group>"; };
 		8E12B977277D8E4900938808 /* AzyCamera.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AzyCamera.m; sourceTree = "<group>"; };
-		8E12B979277D91C600938808 /* CameraEnty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraEnty.h; sourceTree = "<group>"; };
-		8E12B97A277D91C600938808 /* CameraEnty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraEnty.m; sourceTree = "<group>"; };
-		8E12B97D277D989600938808 /* PcFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PcFactory.h; sourceTree = "<group>"; };
-		8E12B97E277D9E7700938808 /* Mouse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mouse.h; sourceTree = "<group>"; };
-		8E12B97F277D9EC500938808 /* Keyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Keyboard.h; sourceTree = "<group>"; };
-		8E12B980277DA08300938808 /* HPMouse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPMouse.h; sourceTree = "<group>"; };
-		8E12B981277DA08300938808 /* HPMouse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPMouse.m; sourceTree = "<group>"; };
-		8E12B983277DA09500938808 /* HPKeyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPKeyboard.h; sourceTree = "<group>"; };
-		8E12B984277DA09500938808 /* HPKeyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPKeyboard.m; sourceTree = "<group>"; };
-		8E12B986277DA16F00938808 /* XMMouse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMMouse.h; sourceTree = "<group>"; };
-		8E12B987277DA16F00938808 /* XMMouse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMMouse.m; sourceTree = "<group>"; };
-		8E12B989277DA17B00938808 /* XMKeyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMKeyboard.h; sourceTree = "<group>"; };
-		8E12B98A277DA17B00938808 /* XMKeyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMKeyboard.m; sourceTree = "<group>"; };
-		8E12B98C277DAAB400938808 /* HPFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPFactory.h; sourceTree = "<group>"; };
-		8E12B98D277DAAB400938808 /* HPFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPFactory.m; sourceTree = "<group>"; };
-		8E12B98F277DAD1B00938808 /* XMFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMFactory.h; sourceTree = "<group>"; };
-		8E12B990277DAD1B00938808 /* XMFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMFactory.m; sourceTree = "<group>"; };
+		8E12B97D277D989600938808 /* PeripheralFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PeripheralFactory.h; sourceTree = "<group>"; };
+		8E12B97F277D9EC500938808 /* SpeakerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeakerProtocol.h; sourceTree = "<group>"; };
+		8E12B98C277DAAB400938808 /* XhwFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XhwFactory.h; sourceTree = "<group>"; };
+		8E12B98D277DAAB400938808 /* XhwFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XhwFactory.m; sourceTree = "<group>"; };
+		8E12B98F277DAD1B00938808 /* AzyFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AzyFactory.h; sourceTree = "<group>"; };
+		8E12B990277DAD1B00938808 /* AzyFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AzyFactory.m; sourceTree = "<group>"; };
 		8EBCE2ED2786920D001AF53D /* DesignPattern-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DesignPattern-Bridging-Header.h"; sourceTree = "<group>"; };
 		8EBCE2EE2786920D001AF53D /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		8EBCE2F0278692FC001AF53D /* MealBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealBuilder.swift; sourceTree = "<group>"; };
@@ -146,7 +134,6 @@
 		8EBCE3002786E64C001AF53D /* builder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = builder.png; sourceTree = "<group>"; };
 		8EBCE3022786E790001AF53D /* SoundAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundAdapter.swift; sourceTree = "<group>"; };
 		8EBCE30527895BB1001AF53D /* bridge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bridge.png; sourceTree = "<group>"; };
-		8EBCE30727895C9F001AF53D /* factory-method.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "factory-method.png"; sourceTree = "<group>"; };
 		8EBCE30827895C9F001AF53D /* factory-abstrac.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "factory-abstrac.png"; sourceTree = "<group>"; };
 		8EBCE30927895C9F001AF53D /* factory-simple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "factory-simple.png"; sourceTree = "<group>"; };
 		8EBCE30D2789660E001AF53D /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
@@ -181,6 +168,16 @@
 		8EBCE351278E67AD001AF53D /* Strategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strategy.swift; sourceTree = "<group>"; };
 		8EBCE353278E67E5001AF53D /* STContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STContext.swift; sourceTree = "<group>"; };
 		8EBCE355278E8409001AF53D /* strategy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = strategy.png; sourceTree = "<group>"; };
+		CED4CD7529A8915000F5C9BD /* factory-method.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "factory-method.png"; sourceTree = "<group>"; };
+		CED4CD7A29A89A2100F5C9BD /* CameraFactoryProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraFactoryProtocol.h; sourceTree = "<group>"; };
+		CED4CD7B29A89B0200F5C9BD /* XhwCameraFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XhwCameraFactory.h; sourceTree = "<group>"; };
+		CED4CD7C29A89B0200F5C9BD /* XhwCameraFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XhwCameraFactory.m; sourceTree = "<group>"; };
+		CED4CD7E29A89B1000F5C9BD /* AzyCameraFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AzyCameraFactory.h; sourceTree = "<group>"; };
+		CED4CD7F29A89B1000F5C9BD /* AzyCameraFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AzyCameraFactory.m; sourceTree = "<group>"; };
+		CED4CD8129AC8F2700F5C9BD /* XhwSpeaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XhwSpeaker.h; sourceTree = "<group>"; };
+		CED4CD8229AC8F2700F5C9BD /* XhwSpeaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XhwSpeaker.m; sourceTree = "<group>"; };
+		CED4CD8429AC8F4300F5C9BD /* AzySpeaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AzySpeaker.h; sourceTree = "<group>"; };
+		CED4CD8529AC8F4300F5C9BD /* AzySpeaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AzySpeaker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,33 +279,9 @@
 		8EBCE2EB27868F19001AF53D /* FactoryPattern-OC */ = {
 			isa = PBXGroup;
 			children = (
-				8EBCE30827895C9F001AF53D /* factory-abstrac.png */,
-				8EBCE30727895C9F001AF53D /* factory-method.png */,
-				8EBCE30927895C9F001AF53D /* factory-simple.png */,
-				8E12B96F277D8DED00938808 /* CameraFactory.h */,
-				8E12B970277D8DED00938808 /* CameraFactory.m */,
-				8E12B972277D8E0F00938808 /* Camera.h */,
-				8E12B973277D8E2A00938808 /* XhwCamera.h */,
-				8E12B974277D8E2A00938808 /* XhwCamera.m */,
-				8E12B976277D8E4900938808 /* AzyCamera.h */,
-				8E12B977277D8E4900938808 /* AzyCamera.m */,
-				8E12B979277D91C600938808 /* CameraEnty.h */,
-				8E12B97A277D91C600938808 /* CameraEnty.m */,
-				8E12B97D277D989600938808 /* PcFactory.h */,
-				8E12B97E277D9E7700938808 /* Mouse.h */,
-				8E12B97F277D9EC500938808 /* Keyboard.h */,
-				8E12B980277DA08300938808 /* HPMouse.h */,
-				8E12B981277DA08300938808 /* HPMouse.m */,
-				8E12B983277DA09500938808 /* HPKeyboard.h */,
-				8E12B984277DA09500938808 /* HPKeyboard.m */,
-				8E12B986277DA16F00938808 /* XMMouse.h */,
-				8E12B987277DA16F00938808 /* XMMouse.m */,
-				8E12B989277DA17B00938808 /* XMKeyboard.h */,
-				8E12B98A277DA17B00938808 /* XMKeyboard.m */,
-				8E12B98C277DAAB400938808 /* HPFactory.h */,
-				8E12B98D277DAAB400938808 /* HPFactory.m */,
-				8E12B98F277DAD1B00938808 /* XMFactory.h */,
-				8E12B990277DAD1B00938808 /* XMFactory.m */,
+				CED4CD7929A8920500F5C9BD /* abstrac */,
+				CED4CD7829A891FC00F5C9BD /* method */,
+				CED4CD7729A891ED00F5C9BD /* simple */,
 			);
 			name = "FactoryPattern-OC";
 			sourceTree = "<group>";
@@ -446,6 +419,52 @@
 			path = Strategy;
 			sourceTree = "<group>";
 		};
+		CED4CD7729A891ED00F5C9BD /* simple */ = {
+			isa = PBXGroup;
+			children = (
+				8EBCE30927895C9F001AF53D /* factory-simple.png */,
+				8E12B96F277D8DED00938808 /* CameraFactory.h */,
+				8E12B970277D8DED00938808 /* CameraFactory.m */,
+				8E12B972277D8E0F00938808 /* CameraProtocol.h */,
+				8E12B973277D8E2A00938808 /* XhwCamera.h */,
+				8E12B974277D8E2A00938808 /* XhwCamera.m */,
+				8E12B976277D8E4900938808 /* AzyCamera.h */,
+				8E12B977277D8E4900938808 /* AzyCamera.m */,
+			);
+			name = simple;
+			sourceTree = "<group>";
+		};
+		CED4CD7829A891FC00F5C9BD /* method */ = {
+			isa = PBXGroup;
+			children = (
+				CED4CD7529A8915000F5C9BD /* factory-method.png */,
+				CED4CD7A29A89A2100F5C9BD /* CameraFactoryProtocol.h */,
+				CED4CD7B29A89B0200F5C9BD /* XhwCameraFactory.h */,
+				CED4CD7C29A89B0200F5C9BD /* XhwCameraFactory.m */,
+				CED4CD7E29A89B1000F5C9BD /* AzyCameraFactory.h */,
+				CED4CD7F29A89B1000F5C9BD /* AzyCameraFactory.m */,
+			);
+			name = method;
+			sourceTree = "<group>";
+		};
+		CED4CD7929A8920500F5C9BD /* abstrac */ = {
+			isa = PBXGroup;
+			children = (
+				8EBCE30827895C9F001AF53D /* factory-abstrac.png */,
+				8E12B97D277D989600938808 /* PeripheralFactory.h */,
+				8E12B98C277DAAB400938808 /* XhwFactory.h */,
+				8E12B98D277DAAB400938808 /* XhwFactory.m */,
+				8E12B98F277DAD1B00938808 /* AzyFactory.h */,
+				8E12B990277DAD1B00938808 /* AzyFactory.m */,
+				8E12B97F277D9EC500938808 /* SpeakerProtocol.h */,
+				CED4CD8129AC8F2700F5C9BD /* XhwSpeaker.h */,
+				CED4CD8229AC8F2700F5C9BD /* XhwSpeaker.m */,
+				CED4CD8429AC8F4300F5C9BD /* AzySpeaker.h */,
+				CED4CD8529AC8F4300F5C9BD /* AzySpeaker.m */,
+			);
+			name = abstrac;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -552,6 +571,7 @@
 			files = (
 				8EBCE328278C0176001AF53D /* flyweight.png in Resources */,
 				8EBCE34F278E5F5B001AF53D /* state.png in Resources */,
+				CED4CD7629A8915000F5C9BD /* factory-method.png in Resources */,
 				8E12B94A277D5E8C00938808 /* LaunchScreen.storyboard in Resources */,
 				8EBCE3012786E64C001AF53D /* builder.png in Resources */,
 				8EBCE32D278C26B6001AF53D /* composite.png in Resources */,
@@ -562,7 +582,6 @@
 				8EBCE348278D7803001AF53D /* observer.png in Resources */,
 				8E12B947277D5E8C00938808 /* Assets.xcassets in Resources */,
 				8EBCE30B27895C9F001AF53D /* factory-abstrac.png in Resources */,
-				8EBCE30A27895C9F001AF53D /* factory-method.png in Resources */,
 				8E12B945277D5E8900938808 /* Main.storyboard in Resources */,
 				8EBCE31A27899229001AF53D /* facade.png in Resources */,
 				8EBCE30C27895C9F001AF53D /* factory-simple.png in Resources */,
@@ -594,15 +613,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EBCE2F627869BB1001AF53D /* PatternTest.swift in Sources */,
-				8E12B97B277D91C600938808 /* CameraEnty.m in Sources */,
 				8EBCE2F92786E47A001AF53D /* SoundTarget.swift in Sources */,
+				CED4CD8629AC8F4300F5C9BD /* AzySpeaker.m in Sources */,
 				8EBCE34D278D8ADD001AF53D /* Context.swift in Sources */,
 				8EBCE31027896758001AF53D /* Road.swift in Sources */,
 				8E12B942277D5E8900938808 /* ViewController.m in Sources */,
 				8EBCE2F1278692FC001AF53D /* MealBuilder.swift in Sources */,
 				8E12B978277D8E4900938808 /* AzyCamera.m in Sources */,
 				8EBCE34B278D8AB7001AF53D /* State.swift in Sources */,
-				8E12B98E277DAAB400938808 /* HPFactory.m in Sources */,
+				8E12B98E277DAAB400938808 /* XhwFactory.m in Sources */,
 				8EBCE321278999FC001AF53D /* Proxy.swift in Sources */,
 				8EBCE33F278D334E001AF53D /* Colleague.swift in Sources */,
 				8E12B93C277D5E8900938808 /* AppDelegate.m in Sources */,
@@ -610,30 +629,29 @@
 				8EBCE2F427869891001AF53D /* MealOrder.swift in Sources */,
 				8EBCE344278D6561001AF53D /* Observer.swift in Sources */,
 				8EBCE338278C35B1001AF53D /* TVInvoker.swift in Sources */,
-				8E12B988277DA16F00938808 /* XMMouse.m in Sources */,
 				8EBCE346278D6588001AF53D /* ObSubject.swift in Sources */,
-				8E12B985277DA09500938808 /* HPKeyboard.m in Sources */,
 				8EBCE326278C0164001AF53D /* FlyWeight.swift in Sources */,
 				8EBCE31527898342001AF53D /* Coffee.swift in Sources */,
 				8E12B94D277D5E8C00938808 /* main.m in Sources */,
 				8EBCE32A278C025A001AF53D /* FlyWeighntFactory.swift in Sources */,
 				8EBCE331278C2740001AF53D /* TreeComposite.swift in Sources */,
 				8EBCE33D278D32E1001AF53D /* Mediator.swift in Sources */,
+				CED4CD7D29A89B0200F5C9BD /* XhwCameraFactory.m in Sources */,
 				8E12B971277D8DED00938808 /* CameraFactory.m in Sources */,
 				8EBCE352278E67AD001AF53D /* Strategy.swift in Sources */,
 				8EBCE31F278999F3001AF53D /* Subject.swift in Sources */,
-				8E12B982277DA08300938808 /* HPMouse.m in Sources */,
 				8EBCE3032786E790001AF53D /* SoundAdapter.swift in Sources */,
 				8EBCE2EF2786920D001AF53D /* Meal.swift in Sources */,
+				CED4CD8329AC8F2700F5C9BD /* XhwSpeaker.m in Sources */,
 				8EBCE30E2789660E001AF53D /* Vehicle.swift in Sources */,
-				8E12B98B277DA17B00938808 /* XMKeyboard.m in Sources */,
 				8EBCE317278984CA001AF53D /* Burden.swift in Sources */,
 				8EBCE336278C34E3001AF53D /* TVCommand.swift in Sources */,
 				8EBCE33A278C3736001AF53D /* TV.swift in Sources */,
-				8E12B991277DAD1B00938808 /* XMFactory.m in Sources */,
+				8E12B991277DAD1B00938808 /* AzyFactory.m in Sources */,
 				8EBCE354278E67E5001AF53D /* STContext.swift in Sources */,
 				8E12B975277D8E2A00938808 /* XhwCamera.m in Sources */,
 				8EBCE2FB2786E4CB001AF53D /* Dog.swift in Sources */,
+				CED4CD8029A89B1000F5C9BD /* AzyCameraFactory.m in Sources */,
 				8EBCE32F278C26E9001AF53D /* TreeComponent.swift in Sources */,
 				8EBCE31C278992F1001AF53D /* System.swift in Sources */,
 				8E12B93F277D5E8900938808 /* SceneDelegate.m in Sources */,

@@ -1,5 +1,5 @@
 //
-//  Camera.h
+//  Keyboard.h
 //  DesignPattern
 //
 //  Created by luxu on 2021/12/30.
@@ -9,11 +9,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol Camera <NSObject>
+@protocol SpeakerProtocol <NSObject>
 
-@optional
 - (void)connect;
-- (void)take;
+- (void)play;
 
 @end
 

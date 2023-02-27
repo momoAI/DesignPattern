@@ -1,17 +1,19 @@
 //
-//  XMKeyboard.h
+//  Camera.h
 //  DesignPattern
 //
 //  Created by luxu on 2021/12/30.
 //
 
 #import <Foundation/Foundation.h>
-#import "Keyboard.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface XMKeyboard : NSObject<Keyboard>
+@protocol CameraProtocol <NSObject>
 
+@optional
+- (void)connect;
+- (void)take;
 
 @end
 
