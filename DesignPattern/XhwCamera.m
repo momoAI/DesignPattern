@@ -11,6 +11,7 @@
 
 - (void)connect {
     NSLog(@"xhw camera connect");
+    NSLog(@"builder info: %@:%@--%@--%@", _shootModule, _shootConfig, _wifiModule, _storageModule);
 }
 
 - (void)take {

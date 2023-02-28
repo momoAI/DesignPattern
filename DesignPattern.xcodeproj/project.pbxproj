@@ -22,15 +22,11 @@
 		8E12B978277D8E4900938808 /* AzyCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E12B977277D8E4900938808 /* AzyCamera.m */; };
 		8E12B98E277DAAB400938808 /* XhwFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E12B98D277DAAB400938808 /* XhwFactory.m */; };
 		8E12B991277DAD1B00938808 /* AzyFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E12B990277DAD1B00938808 /* AzyFactory.m */; };
-		8EBCE2EF2786920D001AF53D /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE2EE2786920D001AF53D /* Meal.swift */; };
-		8EBCE2F1278692FC001AF53D /* MealBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE2F0278692FC001AF53D /* MealBuilder.swift */; };
-		8EBCE2F427869891001AF53D /* MealOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE2F327869891001AF53D /* MealOrder.swift */; };
 		8EBCE2F627869BB1001AF53D /* PatternTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE2F527869BB1001AF53D /* PatternTest.swift */; };
 		8EBCE2F92786E47A001AF53D /* SoundTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE2F82786E47A001AF53D /* SoundTarget.swift */; };
 		8EBCE2FB2786E4CB001AF53D /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE2FA2786E4CB001AF53D /* Dog.swift */; };
 		8EBCE2FD2786E51D001AF53D /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE2FC2786E51D001AF53D /* Cat.swift */; };
 		8EBCE2FF2786E643001AF53D /* adapter.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EBCE2FE2786E643001AF53D /* adapter.png */; };
-		8EBCE3012786E64C001AF53D /* builder.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EBCE3002786E64C001AF53D /* builder.png */; };
 		8EBCE3032786E790001AF53D /* SoundAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE3022786E790001AF53D /* SoundAdapter.swift */; };
 		8EBCE30627895BB1001AF53D /* bridge.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EBCE30527895BB1001AF53D /* bridge.png */; };
 		8EBCE30B27895C9F001AF53D /* factory-abstrac.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EBCE30827895C9F001AF53D /* factory-abstrac.png */; };
@@ -72,6 +68,10 @@
 		CED4CD8029A89B1000F5C9BD /* AzyCameraFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4CD7F29A89B1000F5C9BD /* AzyCameraFactory.m */; };
 		CED4CD8329AC8F2700F5C9BD /* XhwSpeaker.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4CD8229AC8F2700F5C9BD /* XhwSpeaker.m */; };
 		CED4CD8629AC8F4300F5C9BD /* AzySpeaker.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4CD8529AC8F4300F5C9BD /* AzySpeaker.m */; };
+		CED4CD8829ACB0A900F5C9BD /* builder.png in Resources */ = {isa = PBXBuildFile; fileRef = CED4CD8729ACB0A900F5C9BD /* builder.png */; };
+		CED4CD8C29ACB4CA00F5C9BD /* XhwCameraBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4CD8B29ACB4CA00F5C9BD /* XhwCameraBuilder.m */; };
+		CED4CD8F29ACBA2100F5C9BD /* CameraDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4CD8E29ACBA2100F5C9BD /* CameraDirector.m */; };
+		CED4CD9229ADB20000F5C9BD /* XhwCameraHeightBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4CD9029ADB20000F5C9BD /* XhwCameraHeightBuilder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,15 +123,11 @@
 		8E12B98F277DAD1B00938808 /* AzyFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AzyFactory.h; sourceTree = "<group>"; };
 		8E12B990277DAD1B00938808 /* AzyFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AzyFactory.m; sourceTree = "<group>"; };
 		8EBCE2ED2786920D001AF53D /* DesignPattern-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DesignPattern-Bridging-Header.h"; sourceTree = "<group>"; };
-		8EBCE2EE2786920D001AF53D /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
-		8EBCE2F0278692FC001AF53D /* MealBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealBuilder.swift; sourceTree = "<group>"; };
-		8EBCE2F327869891001AF53D /* MealOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealOrder.swift; sourceTree = "<group>"; };
 		8EBCE2F527869BB1001AF53D /* PatternTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternTest.swift; sourceTree = "<group>"; };
 		8EBCE2F82786E47A001AF53D /* SoundTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundTarget.swift; sourceTree = "<group>"; };
 		8EBCE2FA2786E4CB001AF53D /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 		8EBCE2FC2786E51D001AF53D /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
 		8EBCE2FE2786E643001AF53D /* adapter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adapter.png; sourceTree = "<group>"; };
-		8EBCE3002786E64C001AF53D /* builder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = builder.png; sourceTree = "<group>"; };
 		8EBCE3022786E790001AF53D /* SoundAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundAdapter.swift; sourceTree = "<group>"; };
 		8EBCE30527895BB1001AF53D /* bridge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bridge.png; sourceTree = "<group>"; };
 		8EBCE30827895C9F001AF53D /* factory-abstrac.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "factory-abstrac.png"; sourceTree = "<group>"; };
@@ -178,6 +174,14 @@
 		CED4CD8229AC8F2700F5C9BD /* XhwSpeaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XhwSpeaker.m; sourceTree = "<group>"; };
 		CED4CD8429AC8F4300F5C9BD /* AzySpeaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AzySpeaker.h; sourceTree = "<group>"; };
 		CED4CD8529AC8F4300F5C9BD /* AzySpeaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AzySpeaker.m; sourceTree = "<group>"; };
+		CED4CD8729ACB0A900F5C9BD /* builder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = builder.png; sourceTree = "<group>"; };
+		CED4CD8929ACB25100F5C9BD /* CameraBuilderProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraBuilderProtocol.h; sourceTree = "<group>"; };
+		CED4CD8A29ACB4CA00F5C9BD /* XhwCameraBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XhwCameraBuilder.h; sourceTree = "<group>"; };
+		CED4CD8B29ACB4CA00F5C9BD /* XhwCameraBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XhwCameraBuilder.m; sourceTree = "<group>"; };
+		CED4CD8D29ACBA2100F5C9BD /* CameraDirector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraDirector.h; sourceTree = "<group>"; };
+		CED4CD8E29ACBA2100F5C9BD /* CameraDirector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraDirector.m; sourceTree = "<group>"; };
+		CED4CD9029ADB20000F5C9BD /* XhwCameraHeightBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XhwCameraHeightBuilder.m; sourceTree = "<group>"; };
+		CED4CD9129ADB20000F5C9BD /* XhwCameraHeightBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XhwCameraHeightBuilder.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,7 +244,7 @@
 				8EBCE311278982B7001AF53D /* DecoratorPattern */,
 				8EBCE30427895B63001AF53D /* BridgePattern */,
 				8EBCE2F72786E2F0001AF53D /* AdapterPattern */,
-				8EBCE2F227869679001AF53D /* BuilderPattern */,
+				8EBCE2F227869679001AF53D /* BuilderPattern-OC */,
 				8EBCE2EB27868F19001AF53D /* FactoryPattern-OC */,
 				8E12B93A277D5E8900938808 /* AppDelegate.h */,
 				8E12B93B277D5E8900938808 /* AppDelegate.m */,
@@ -286,15 +290,19 @@
 			name = "FactoryPattern-OC";
 			sourceTree = "<group>";
 		};
-		8EBCE2F227869679001AF53D /* BuilderPattern */ = {
+		8EBCE2F227869679001AF53D /* BuilderPattern-OC */ = {
 			isa = PBXGroup;
 			children = (
-				8EBCE3002786E64C001AF53D /* builder.png */,
-				8EBCE2EE2786920D001AF53D /* Meal.swift */,
-				8EBCE2F0278692FC001AF53D /* MealBuilder.swift */,
-				8EBCE2F327869891001AF53D /* MealOrder.swift */,
+				CED4CD8729ACB0A900F5C9BD /* builder.png */,
+				CED4CD8929ACB25100F5C9BD /* CameraBuilderProtocol.h */,
+				CED4CD8A29ACB4CA00F5C9BD /* XhwCameraBuilder.h */,
+				CED4CD8B29ACB4CA00F5C9BD /* XhwCameraBuilder.m */,
+				CED4CD9129ADB20000F5C9BD /* XhwCameraHeightBuilder.h */,
+				CED4CD9029ADB20000F5C9BD /* XhwCameraHeightBuilder.m */,
+				CED4CD8D29ACBA2100F5C9BD /* CameraDirector.h */,
+				CED4CD8E29ACBA2100F5C9BD /* CameraDirector.m */,
 			);
-			path = BuilderPattern;
+			path = "BuilderPattern-OC";
 			sourceTree = "<group>";
 		};
 		8EBCE2F72786E2F0001AF53D /* AdapterPattern */ = {
@@ -573,9 +581,9 @@
 				8EBCE34F278E5F5B001AF53D /* state.png in Resources */,
 				CED4CD7629A8915000F5C9BD /* factory-method.png in Resources */,
 				8E12B94A277D5E8C00938808 /* LaunchScreen.storyboard in Resources */,
-				8EBCE3012786E64C001AF53D /* builder.png in Resources */,
 				8EBCE32D278C26B6001AF53D /* composite.png in Resources */,
 				8EBCE341278D578C001AF53D /* mediator.png in Resources */,
+				CED4CD8829ACB0A900F5C9BD /* builder.png in Resources */,
 				8EBCE334278C34C6001AF53D /* command.png in Resources */,
 				8EBCE32327899A0E001AF53D /* proxy.png in Resources */,
 				8EBCE356278E8409001AF53D /* strategy.png in Resources */,
@@ -616,9 +624,9 @@
 				8EBCE2F92786E47A001AF53D /* SoundTarget.swift in Sources */,
 				CED4CD8629AC8F4300F5C9BD /* AzySpeaker.m in Sources */,
 				8EBCE34D278D8ADD001AF53D /* Context.swift in Sources */,
+				CED4CD9229ADB20000F5C9BD /* XhwCameraHeightBuilder.m in Sources */,
 				8EBCE31027896758001AF53D /* Road.swift in Sources */,
 				8E12B942277D5E8900938808 /* ViewController.m in Sources */,
-				8EBCE2F1278692FC001AF53D /* MealBuilder.swift in Sources */,
 				8E12B978277D8E4900938808 /* AzyCamera.m in Sources */,
 				8EBCE34B278D8AB7001AF53D /* State.swift in Sources */,
 				8E12B98E277DAAB400938808 /* XhwFactory.m in Sources */,
@@ -626,7 +634,6 @@
 				8EBCE33F278D334E001AF53D /* Colleague.swift in Sources */,
 				8E12B93C277D5E8900938808 /* AppDelegate.m in Sources */,
 				8EBCE2FD2786E51D001AF53D /* Cat.swift in Sources */,
-				8EBCE2F427869891001AF53D /* MealOrder.swift in Sources */,
 				8EBCE344278D6561001AF53D /* Observer.swift in Sources */,
 				8EBCE338278C35B1001AF53D /* TVInvoker.swift in Sources */,
 				8EBCE346278D6588001AF53D /* ObSubject.swift in Sources */,
@@ -641,12 +648,12 @@
 				8EBCE352278E67AD001AF53D /* Strategy.swift in Sources */,
 				8EBCE31F278999F3001AF53D /* Subject.swift in Sources */,
 				8EBCE3032786E790001AF53D /* SoundAdapter.swift in Sources */,
-				8EBCE2EF2786920D001AF53D /* Meal.swift in Sources */,
 				CED4CD8329AC8F2700F5C9BD /* XhwSpeaker.m in Sources */,
 				8EBCE30E2789660E001AF53D /* Vehicle.swift in Sources */,
 				8EBCE317278984CA001AF53D /* Burden.swift in Sources */,
 				8EBCE336278C34E3001AF53D /* TVCommand.swift in Sources */,
 				8EBCE33A278C3736001AF53D /* TV.swift in Sources */,
+				CED4CD8F29ACBA2100F5C9BD /* CameraDirector.m in Sources */,
 				8E12B991277DAD1B00938808 /* AzyFactory.m in Sources */,
 				8EBCE354278E67E5001AF53D /* STContext.swift in Sources */,
 				8E12B975277D8E2A00938808 /* XhwCamera.m in Sources */,
@@ -655,6 +662,7 @@
 				8EBCE32F278C26E9001AF53D /* TreeComponent.swift in Sources */,
 				8EBCE31C278992F1001AF53D /* System.swift in Sources */,
 				8E12B93F277D5E8900938808 /* SceneDelegate.m in Sources */,
+				CED4CD8C29ACB4CA00F5C9BD /* XhwCameraBuilder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,6 +13,8 @@
 #import "DesignPattern-Swift.h"
 #import "XhwCameraFactory.h"
 #import "AzyCameraFactory.h"
+#import "CameraDirector.h"
+#import "XhwCameraBuilder.h"
 
 @interface ViewController ()
 
@@ -71,6 +73,14 @@
 //    id<SpeakerProtocol> speaker = [fc createSpeaker];
 //    [speaker connect];
 //    [speaker play];
+    
+    // 建造者
+    XhwCameraBuilder *builder = [[XhwCameraBuilder alloc] init];
+    CameraDirector *director = [[CameraDirector alloc] init];
+    [director constuctBuilder:builder];
+    id<CameraProtocol> camera = [builder build];
+    [camera connect];
+    
     
     [PatternTest test];
 }

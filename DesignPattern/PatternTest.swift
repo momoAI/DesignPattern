@@ -9,12 +9,6 @@ import Foundation
 
 @objcMembers class PatternTest: NSObject {
     static func test() {
-        // 建造者（生成器） 模式
-////        let builder = AMealBuilder()
-//        let builder = BMealBuilder()
-//        var director = MealOrder()
-//        let meal = director.construct(builder: builder)
-//        meal.show()
         
         // 适配器模式
         // 1.类适配器
