@@ -22,6 +22,7 @@
 - (instancetype)init {
     if (self = [super init]) {
         _camera = [[XhwCamera alloc] init];
+        _camera.shootConfig = @"拍摄配置：默认配置";
     }
     
     return self;

@@ -15,6 +15,7 @@
 #import "AzyCameraFactory.h"
 #import "CameraDirector.h"
 #import "XhwCameraBuilder.h"
+#import "XhwCameraHeightBuilder.h"
 
 @interface ViewController ()
 
@@ -75,11 +76,17 @@
 //    [speaker play];
     
     // 建造者
+    // 1. 默认相机
     XhwCameraBuilder *builder = [[XhwCameraBuilder alloc] init];
     CameraDirector *director = [[CameraDirector alloc] init];
     [director constuctBuilder:builder];
     id<CameraProtocol> camera = [builder build];
     [camera connect];
+    // 2. 高配相机
+    XhwCameraHeightBuilder *builderH = [[XhwCameraHeightBuilder alloc] init];
+    [director constuctBuilder:builderH];
+    id<CameraProtocol> cameraH = [builderH build];
+    [cameraH connect];
     
     
     [PatternTest test];
