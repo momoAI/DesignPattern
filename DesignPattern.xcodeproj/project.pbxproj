@@ -63,6 +63,7 @@
 		8EBCE352278E67AD001AF53D /* Strategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE351278E67AD001AF53D /* Strategy.swift */; };
 		8EBCE354278E67E5001AF53D /* STContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE353278E67E5001AF53D /* STContext.swift */; };
 		8EBCE356278E8409001AF53D /* strategy.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EBCE355278E8409001AF53D /* strategy.png */; };
+		CE9B76E329AEF83C00B292CD /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9B76E229AEF83C00B292CD /* CameraManager.swift */; };
 		CED4CD7629A8915000F5C9BD /* factory-method.png in Resources */ = {isa = PBXBuildFile; fileRef = CED4CD7529A8915000F5C9BD /* factory-method.png */; };
 		CED4CD7D29A89B0200F5C9BD /* XhwCameraFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4CD7C29A89B0200F5C9BD /* XhwCameraFactory.m */; };
 		CED4CD8029A89B1000F5C9BD /* AzyCameraFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4CD7F29A89B1000F5C9BD /* AzyCameraFactory.m */; };
@@ -72,6 +73,7 @@
 		CED4CD8C29ACB4CA00F5C9BD /* XhwCameraBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4CD8B29ACB4CA00F5C9BD /* XhwCameraBuilder.m */; };
 		CED4CD8F29ACBA2100F5C9BD /* CameraDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4CD8E29ACBA2100F5C9BD /* CameraDirector.m */; };
 		CED4CD9229ADB20000F5C9BD /* XhwCameraHeightBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4CD9029ADB20000F5C9BD /* XhwCameraHeightBuilder.m */; };
+		CED6A5B129AEE125009EBA6F /* CameraManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CED6A5B029AEE125009EBA6F /* CameraManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,6 +166,7 @@
 		8EBCE351278E67AD001AF53D /* Strategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strategy.swift; sourceTree = "<group>"; };
 		8EBCE353278E67E5001AF53D /* STContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STContext.swift; sourceTree = "<group>"; };
 		8EBCE355278E8409001AF53D /* strategy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = strategy.png; sourceTree = "<group>"; };
+		CE9B76E229AEF83C00B292CD /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
 		CED4CD7529A8915000F5C9BD /* factory-method.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "factory-method.png"; sourceTree = "<group>"; };
 		CED4CD7A29A89A2100F5C9BD /* CameraFactoryProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraFactoryProtocol.h; sourceTree = "<group>"; };
 		CED4CD7B29A89B0200F5C9BD /* XhwCameraFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XhwCameraFactory.h; sourceTree = "<group>"; };
@@ -182,6 +185,8 @@
 		CED4CD8E29ACBA2100F5C9BD /* CameraDirector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraDirector.m; sourceTree = "<group>"; };
 		CED4CD9029ADB20000F5C9BD /* XhwCameraHeightBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XhwCameraHeightBuilder.m; sourceTree = "<group>"; };
 		CED4CD9129ADB20000F5C9BD /* XhwCameraHeightBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XhwCameraHeightBuilder.h; sourceTree = "<group>"; };
+		CED6A5AF29AEE125009EBA6F /* CameraManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraManager.h; sourceTree = "<group>"; };
+		CED6A5B029AEE125009EBA6F /* CameraManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +237,7 @@
 		8E12B939277D5E8900938808 /* DesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				CED6A5AE29AEE046009EBA6F /* Singleton */,
 				8EBCE350278E679B001AF53D /* Strategy */,
 				8EBCE349278D8AA8001AF53D /* State */,
 				8EBCE342278D6546001AF53D /* Observer */,
@@ -473,6 +479,16 @@
 			name = abstrac;
 			sourceTree = "<group>";
 		};
+		CED6A5AE29AEE046009EBA6F /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				CED6A5AF29AEE125009EBA6F /* CameraManager.h */,
+				CED6A5B029AEE125009EBA6F /* CameraManager.m */,
+				CE9B76E229AEF83C00B292CD /* CameraManager.swift */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -642,6 +658,7 @@
 				8E12B94D277D5E8C00938808 /* main.m in Sources */,
 				8EBCE32A278C025A001AF53D /* FlyWeighntFactory.swift in Sources */,
 				8EBCE331278C2740001AF53D /* TreeComposite.swift in Sources */,
+				CED6A5B129AEE125009EBA6F /* CameraManager.m in Sources */,
 				8EBCE33D278D32E1001AF53D /* Mediator.swift in Sources */,
 				CED4CD7D29A89B0200F5C9BD /* XhwCameraFactory.m in Sources */,
 				8E12B971277D8DED00938808 /* CameraFactory.m in Sources */,
@@ -653,6 +670,7 @@
 				8EBCE317278984CA001AF53D /* Burden.swift in Sources */,
 				8EBCE336278C34E3001AF53D /* TVCommand.swift in Sources */,
 				8EBCE33A278C3736001AF53D /* TV.swift in Sources */,
+				CE9B76E329AEF83C00B292CD /* CameraManager.swift in Sources */,
 				CED4CD8F29ACBA2100F5C9BD /* CameraDirector.m in Sources */,
 				8E12B991277DAD1B00938808 /* AzyFactory.m in Sources */,
 				8EBCE354278E67E5001AF53D /* STContext.swift in Sources */,

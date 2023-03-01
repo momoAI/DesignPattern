@@ -9,6 +9,9 @@ import Foundation
 
 @objcMembers class PatternTest: NSObject {
     static func test() {
+        // 单例
+//        let mg = CameraManager.defaultManager
+//        let mg1 = CameraManager()
         
         // 适配器模式
         // 1.类适配器

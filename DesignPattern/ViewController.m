@@ -16,6 +16,7 @@
 #import "CameraDirector.h"
 #import "XhwCameraBuilder.h"
 #import "XhwCameraHeightBuilder.h"
+#import "CameraManager.h"
 
 @interface ViewController ()
 
@@ -27,6 +28,22 @@
     [super viewDidLoad];
     
     // Do any additional setup after loading the view.
+    
+    // 单例模式
+//    NSNotificationCenter *c = [NSNotificationCenter defaultCenter];
+//    NSNotificationCenter *c1 = [NSNotificationCenter defaultCenter];
+//    NSNotificationCenter *c2 = [[NSNotificationCenter alloc] init];
+//    NSFileManager *f = [NSFileManager defaultManager];
+//    NSFileManager *f1 = [NSFileManager defaultManager];
+//    NSFileManager *f2 = [[NSFileManager alloc] init];
+////    UIApplication *p = [UIApplication sharedApplication];
+////    UIApplication *p1 = [[UIApplication alloc] init];
+////    UIApplication *p2 = [[UIApplication alloc] init];
+//
+//    CameraManager *mg = [CameraManager defaultManager];
+//    CameraManager *mg1 = [CameraManager defaultManager];
+//    CameraManager *mg2 = [[CameraManager alloc] init];
+//
     
 //    id btAlloc = [UIButton alloc];
 //    UIButton *bt0 = [btAlloc init];
@@ -77,16 +94,16 @@
     
     // 建造者
     // 1. 默认相机
-    XhwCameraBuilder *builder = [[XhwCameraBuilder alloc] init];
-    CameraDirector *director = [[CameraDirector alloc] init];
-    [director constuctBuilder:builder];
-    id<CameraProtocol> camera = [builder build];
-    [camera connect];
-    // 2. 高配相机
-    XhwCameraHeightBuilder *builderH = [[XhwCameraHeightBuilder alloc] init];
-    [director constuctBuilder:builderH];
-    id<CameraProtocol> cameraH = [builderH build];
-    [cameraH connect];
+//    XhwCameraBuilder *builder = [[XhwCameraBuilder alloc] init];
+//    CameraDirector *director = [[CameraDirector alloc] init];
+//    [director constuctBuilder:builder];
+//    id<CameraProtocol> camera = [builder build];
+//    [camera connect];
+//    // 2. 高配相机
+//    XhwCameraHeightBuilder *builderH = [[XhwCameraHeightBuilder alloc] init];
+//    [director constuctBuilder:builderH];
+//    id<CameraProtocol> cameraH = [builderH build];
+//    [cameraH connect];
     
     
     [PatternTest test];
