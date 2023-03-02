@@ -14,17 +14,42 @@ import Foundation
 //        let mg1 = CameraManager()
         
         // 适配器模式
-        // 1.类适配器
-//        let adapter: SoundTarget = Dog()
-//        adapter.makeSound()
-//        let adapter2: SoundTarget = Cat()
-//        adapter2.makeSound()
+//        let appleEmployee = AppleEmployee(name: "jobs", seniority: 20, salary: 100000)
+//        dealEmployee(employee: appleEmployee)
+//        let spacesEmployee = SpacesEmployee(s_name: "jack", s_seniority: 1, s_salary: 5000)
+//        dealEmployee(employee: spacesEmployee)
 //
-//        // 2.对象适配器
-//        let adapter3 = DogAdapter(dog: Dog())
-//        adapter3.makeSound()
-//        let adapter4 = CatAdapter(cat: Cat())
-//        adapter4.makeSound()
+//        func dealEmployee(employee: AppleEmployee) {
+//            // ...
+//            print(employee.getEmployeeInfo())
+//        }
+//
+//        func dealEmployee(employee: SpacesEmployee) {
+//            // ...
+//            let spacesEeInfo = "员工：\(employee.s_name), 工龄：\(employee.s_seniority), 薪酬：\(Double(employee.s_salary))"
+//            print(spacesEeInfo)
+//        }
+        // 1.类适配器
+//        let appleEmployee = AppleEmployee(name: "jobs", seniority: 20, salary: 100000)
+//        dealEmployee(employee: appleEmployee)
+//        let employeeAdapter = SpacesEmployeeClassAdapter(s_name: "jack", s_seniority: 1, s_salary: 5000)
+//        dealEmployee(employee: employeeAdapter)
+//
+//        func dealEmployee(employee: Employee) {
+//            // ...
+//            print(employee.getEmployeeInfo())
+//        }
+        // 2.对象适配器
+        let appleEmployee = AppleEmployee(name: "jobs", seniority: 20, salary: 100000)
+        dealEmployee(employee: appleEmployee)
+        let spacesEmployee = SpacesEmployee(s_name: "jack", s_seniority: 1, s_salary: 5000)
+        let employeeAdapter = SpacesEmployeeInstanceAdapter(spacesEmployee: spacesEmployee)
+        dealEmployee(employee: employeeAdapter)
+
+        func dealEmployee(employee: AppleEmployee) {
+            // ...
+            print(employee.getEmployeeInfo())
+        }
         
         // 桥接模式 (2个维度)
 //        let car = Car()

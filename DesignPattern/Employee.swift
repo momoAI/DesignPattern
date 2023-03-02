@@ -8,6 +8,7 @@
 import Foundation
 
 // Target
-protocol SoundTarget {
-    func makeSound()
+protocol Employee {
+    var salary: Double { get }
+    func getEmployeeInfo() -> String
 }
