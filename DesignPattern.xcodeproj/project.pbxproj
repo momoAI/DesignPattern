@@ -36,7 +36,6 @@
 		8EBCE31C278992F1001AF53D /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE31B278992F1001AF53D /* System.swift */; };
 		8EBCE31F278999F3001AF53D /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE31E278999F3001AF53D /* Subject.swift */; };
 		8EBCE321278999FC001AF53D /* Proxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE320278999FC001AF53D /* Proxy.swift */; };
-		8EBCE32327899A0E001AF53D /* proxy.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EBCE32227899A0E001AF53D /* proxy.png */; };
 		8EBCE326278C0164001AF53D /* FlyWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE325278C0164001AF53D /* FlyWeight.swift */; };
 		8EBCE328278C0176001AF53D /* flyweight.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EBCE327278C0176001AF53D /* flyweight.png */; };
 		8EBCE32A278C025A001AF53D /* FlyWeighntFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE329278C025A001AF53D /* FlyWeighntFactory.swift */; };
@@ -75,6 +74,7 @@
 		CEDAC90E29B1B761001E6980 /* bridge.png in Resources */ = {isa = PBXBuildFile; fileRef = CEDAC90D29B1B761001E6980 /* bridge.png */; };
 		CEDAC91029B1BBDE001E6980 /* facade.png in Resources */ = {isa = PBXBuildFile; fileRef = CEDAC90F29B1BBDE001E6980 /* facade.png */; };
 		CEDAC91229B1DA2A001E6980 /* decorator.png in Resources */ = {isa = PBXBuildFile; fileRef = CEDAC91129B1DA2A001E6980 /* decorator.png */; };
+		CEDAC91429B1F5EB001E6980 /* proxy.png in Resources */ = {isa = PBXBuildFile; fileRef = CEDAC91329B1F5EB001E6980 /* proxy.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,7 +140,6 @@
 		8EBCE31B278992F1001AF53D /* System.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
 		8EBCE31E278999F3001AF53D /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
 		8EBCE320278999FC001AF53D /* Proxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proxy.swift; sourceTree = "<group>"; };
-		8EBCE32227899A0E001AF53D /* proxy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = proxy.png; sourceTree = "<group>"; };
 		8EBCE325278C0164001AF53D /* FlyWeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyWeight.swift; sourceTree = "<group>"; };
 		8EBCE327278C0176001AF53D /* flyweight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flyweight.png; sourceTree = "<group>"; };
 		8EBCE329278C025A001AF53D /* FlyWeighntFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyWeighntFactory.swift; sourceTree = "<group>"; };
@@ -189,6 +188,7 @@
 		CEDAC90D29B1B761001E6980 /* bridge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bridge.png; sourceTree = "<group>"; };
 		CEDAC90F29B1BBDE001E6980 /* facade.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facade.png; sourceTree = "<group>"; };
 		CEDAC91129B1DA2A001E6980 /* decorator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = decorator.png; sourceTree = "<group>"; };
+		CEDAC91329B1F5EB001E6980 /* proxy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = proxy.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,7 +249,6 @@
 				8EBCE32B278C26AA001AF53D /* Composite */,
 				8EBCE324278C0110001AF53D /* FlyWeight */,
 				8EBCE31D278999B1001AF53D /* Proxy */,
-				8EBCE311278982B7001AF53D /* DecoratorPattern */,
 				8E12B93A277D5E8900938808 /* AppDelegate.h */,
 				8E12B93B277D5E8900938808 /* AppDelegate.m */,
 				8E12B93D277D5E8900938808 /* SceneDelegate.h */,
@@ -354,7 +353,7 @@
 		8EBCE31D278999B1001AF53D /* Proxy */ = {
 			isa = PBXGroup;
 			children = (
-				8EBCE32227899A0E001AF53D /* proxy.png */,
+				CEDAC91329B1F5EB001E6980 /* proxy.png */,
 				8EBCE31E278999F3001AF53D /* Subject.swift */,
 				8EBCE320278999FC001AF53D /* Proxy.swift */,
 			);
@@ -438,6 +437,7 @@
 				8EBCE3182789921C001AF53D /* Facade */,
 				8EBCE30427895B63001AF53D /* BridgePattern */,
 				8EBCE2F72786E2F0001AF53D /* AdapterPattern */,
+				8EBCE311278982B7001AF53D /* DecoratorPattern */,
 			);
 			name = StructuralType;
 			sourceTree = "<group>";
@@ -614,6 +614,7 @@
 			files = (
 				8EBCE328278C0176001AF53D /* flyweight.png in Resources */,
 				8EBCE34F278E5F5B001AF53D /* state.png in Resources */,
+				CEDAC91429B1F5EB001E6980 /* proxy.png in Resources */,
 				CED4CD7629A8915000F5C9BD /* factory-method.png in Resources */,
 				8E12B94A277D5E8C00938808 /* LaunchScreen.storyboard in Resources */,
 				8EBCE32D278C26B6001AF53D /* composite.png in Resources */,
@@ -622,7 +623,6 @@
 				CEDAC91229B1DA2A001E6980 /* decorator.png in Resources */,
 				CED4CD8829ACB0A900F5C9BD /* builder.png in Resources */,
 				8EBCE334278C34C6001AF53D /* command.png in Resources */,
-				8EBCE32327899A0E001AF53D /* proxy.png in Resources */,
 				8EBCE356278E8409001AF53D /* strategy.png in Resources */,
 				CE38952C29B0A30B0012450E /* class_adapter.png in Resources */,
 				8EBCE348278D7803001AF53D /* observer.png in Resources */,

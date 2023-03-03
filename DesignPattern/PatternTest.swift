@@ -87,10 +87,10 @@ import UIKit
 //        let flowerGiftCard = FlowerWithGiftCard()
 //        flowerGiftCard.sold()
         
-        let flower = Flower()
-        let giftWrap = Gift(goods: flower)
-        let cardWrap = Card(goods: giftWrap)
-        cardWrap.sold()
+//        let flower = Flower()
+//        let giftWrap = Gift(goods: flower)
+//        let cardWrap = Card(goods: giftWrap)
+//        cardWrap.sold()
         
         // 外观模式
 //        let system = System()

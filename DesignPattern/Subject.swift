@@ -11,7 +11,7 @@ protocol Buyer {
     func buyMac()
 }
 
-struct ChinaBuyer : Buyer {
+struct ChinaBuyer: Buyer {
     func buyMac() {
         print("china buyer buy mac")
     }

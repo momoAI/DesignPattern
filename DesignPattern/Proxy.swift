@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct BuyerProxy : Buyer {
+struct BuyerProxy: Buyer {
     let buyer = ChinaBuyer()
     func buyMac() {
         buyer.buyMac()
