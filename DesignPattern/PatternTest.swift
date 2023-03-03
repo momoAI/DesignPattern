@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 @objcMembers class PatternTest: NSObject {
     static func test() {
@@ -40,28 +41,43 @@ import Foundation
 //            print(employee.getEmployeeInfo())
 //        }
         // 2.对象适配器
-        let appleEmployee = AppleEmployee(name: "jobs", seniority: 20, salary: 100000)
-        dealEmployee(employee: appleEmployee)
-        let spacesEmployee = SpacesEmployee(s_name: "jack", s_seniority: 1, s_salary: 5000)
-        let employeeAdapter = SpacesEmployeeInstanceAdapter(spacesEmployee: spacesEmployee)
-        dealEmployee(employee: employeeAdapter)
-
-        func dealEmployee(employee: AppleEmployee) {
-            // ...
-            print(employee.getEmployeeInfo())
-        }
+//        let appleEmployee = AppleEmployee(name: "jobs", seniority: 20, salary: 100000)
+//        dealEmployee(employee: appleEmployee)
+//        let spacesEmployee = SpacesEmployee(s_name: "jack", s_seniority: 1, s_salary: 5000)
+//        let employeeAdapter = SpacesEmployeeInstanceAdapter(spacesEmployee: spacesEmployee)
+//        dealEmployee(employee: employeeAdapter)
+//
+//        func dealEmployee(employee: AppleEmployee) {
+//            // ...
+//            print(employee.getEmployeeInfo())
+//        }
         
-        // 桥接模式 (2个维度)
-//        let car = Car()
-//        let bus = Bus()
-//        let asphaltCar = AsphaltRoad(vehicle: car)
-//        let asphaltBus = AsphaltRoad(vehicle: bus)
-//        let cementCar = CementRoad(vehicle: car)
-//        let cementBus = CementRoad(vehicle: bus)
-//        asphaltBus.driveOnRoad()
-//        asphaltCar.driveOnRoad()
-//        cementBus.driveOnRoad()
-//        cementCar.driveOnRoad()
+        // 桥接模式
+//        let share1 = WXTextShare(text: "心灵毒鸡汤...")
+//        share1.share()
+//        let share2 = QQTextShare(text: "心灵毒鸡汤...")
+//        share2.share()
+//        let image = UIImage.init(named: "bridge.png")
+//        guard let imgData = image?.pngData() else {
+//            print("image data error")
+//            return
+//        }
+//        let share3 = WXImageShare(imageData: imgData)
+//        share3.share()
+        
+        let wx = WXSharePlatform()
+        let share1 = TextShare(implementor: wx, text: "心灵毒鸡汤...")
+        share1.share()
+        
+        let image = UIImage.init(named: "bridge.png")
+        guard let imgData = image?.pngData() else {
+            print("image data error")
+            return
+        }
+        let qq = QQSharePlatform()
+        let share2 = ImageShare(implementor: qq, imageData: imgData)
+        share2.share()
+        
         
         // 装饰器模式 （减少继承）
 //        let coffee = KafelakuCoffee()

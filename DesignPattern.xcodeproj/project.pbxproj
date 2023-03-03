@@ -30,8 +30,8 @@
 		8EBCE30627895BB1001AF53D /* bridge.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EBCE30527895BB1001AF53D /* bridge.png */; };
 		8EBCE30B27895C9F001AF53D /* factory-abstrac.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EBCE30827895C9F001AF53D /* factory-abstrac.png */; };
 		8EBCE30C27895C9F001AF53D /* factory-simple.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EBCE30927895C9F001AF53D /* factory-simple.png */; };
-		8EBCE30E2789660E001AF53D /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE30D2789660E001AF53D /* Vehicle.swift */; };
-		8EBCE31027896758001AF53D /* Road.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE30F27896758001AF53D /* Road.swift */; };
+		8EBCE30E2789660E001AF53D /* SharePlatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE30D2789660E001AF53D /* SharePlatform.swift */; };
+		8EBCE31027896758001AF53D /* ShareContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE30F27896758001AF53D /* ShareContent.swift */; };
 		8EBCE313278982D4001AF53D /* Decorator.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EBCE312278982D4001AF53D /* Decorator.png */; };
 		8EBCE31527898342001AF53D /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE31427898342001AF53D /* Coffee.swift */; };
 		8EBCE317278984CA001AF53D /* Burden.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE316278984CA001AF53D /* Burden.swift */; };
@@ -134,8 +134,8 @@
 		8EBCE30527895BB1001AF53D /* bridge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bridge.png; sourceTree = "<group>"; };
 		8EBCE30827895C9F001AF53D /* factory-abstrac.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "factory-abstrac.png"; sourceTree = "<group>"; };
 		8EBCE30927895C9F001AF53D /* factory-simple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "factory-simple.png"; sourceTree = "<group>"; };
-		8EBCE30D2789660E001AF53D /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
-		8EBCE30F27896758001AF53D /* Road.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Road.swift; sourceTree = "<group>"; };
+		8EBCE30D2789660E001AF53D /* SharePlatform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePlatform.swift; sourceTree = "<group>"; };
+		8EBCE30F27896758001AF53D /* ShareContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareContent.swift; sourceTree = "<group>"; };
 		8EBCE312278982D4001AF53D /* Decorator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Decorator.png; sourceTree = "<group>"; };
 		8EBCE31427898342001AF53D /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
 		8EBCE316278984CA001AF53D /* Burden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Burden.swift; sourceTree = "<group>"; };
@@ -239,6 +239,7 @@
 		8E12B939277D5E8900938808 /* DesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				CE38952F29B0B5610012450E /* StructuralType */,
 				CE9B76E429B03AFE00B292CD /* CreationType */,
 				8EBCE350278E679B001AF53D /* Strategy */,
 				8EBCE349278D8AA8001AF53D /* State */,
@@ -251,7 +252,6 @@
 				8EBCE3182789921C001AF53D /* Facade */,
 				8EBCE311278982B7001AF53D /* DecoratorPattern */,
 				8EBCE30427895B63001AF53D /* BridgePattern */,
-				8EBCE2F72786E2F0001AF53D /* AdapterPattern */,
 				8E12B93A277D5E8900938808 /* AppDelegate.h */,
 				8E12B93B277D5E8900938808 /* AppDelegate.m */,
 				8E12B93D277D5E8900938808 /* SceneDelegate.h */,
@@ -328,8 +328,8 @@
 			isa = PBXGroup;
 			children = (
 				8EBCE30527895BB1001AF53D /* bridge.png */,
-				8EBCE30D2789660E001AF53D /* Vehicle.swift */,
-				8EBCE30F27896758001AF53D /* Road.swift */,
+				8EBCE30F27896758001AF53D /* ShareContent.swift */,
+				8EBCE30D2789660E001AF53D /* SharePlatform.swift */,
 			);
 			path = BridgePattern;
 			sourceTree = "<group>";
@@ -432,6 +432,14 @@
 				8EBCE353278E67E5001AF53D /* STContext.swift */,
 			);
 			path = Strategy;
+			sourceTree = "<group>";
+		};
+		CE38952F29B0B5610012450E /* StructuralType */ = {
+			isa = PBXGroup;
+			children = (
+				8EBCE2F72786E2F0001AF53D /* AdapterPattern */,
+			);
+			name = StructuralType;
 			sourceTree = "<group>";
 		};
 		CE9B76E429B03AFE00B292CD /* CreationType */ = {
@@ -653,7 +661,7 @@
 				CED4CD8629AC8F4300F5C9BD /* AzySpeaker.m in Sources */,
 				8EBCE34D278D8ADD001AF53D /* Context.swift in Sources */,
 				CED4CD9229ADB20000F5C9BD /* XhwCameraHeightBuilder.m in Sources */,
-				8EBCE31027896758001AF53D /* Road.swift in Sources */,
+				8EBCE31027896758001AF53D /* ShareContent.swift in Sources */,
 				8E12B942277D5E8900938808 /* ViewController.m in Sources */,
 				8E12B978277D8E4900938808 /* AzyCamera.m in Sources */,
 				8EBCE34B278D8AB7001AF53D /* State.swift in Sources */,
@@ -678,7 +686,7 @@
 				8EBCE31F278999F3001AF53D /* Subject.swift in Sources */,
 				8EBCE3032786E790001AF53D /* EmployeeAdapter.swift in Sources */,
 				CED4CD8329AC8F2700F5C9BD /* XhwSpeaker.m in Sources */,
-				8EBCE30E2789660E001AF53D /* Vehicle.swift in Sources */,
+				8EBCE30E2789660E001AF53D /* SharePlatform.swift in Sources */,
 				8EBCE317278984CA001AF53D /* Burden.swift in Sources */,
 				8EBCE336278C34E3001AF53D /* TVCommand.swift in Sources */,
 				8EBCE33A278C3736001AF53D /* TV.swift in Sources */,
