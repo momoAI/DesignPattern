@@ -14,6 +14,7 @@ struct System {
     let sc = SystemC()
     
     func start() {
+        // 封装调用子系统
         sa.open()
         sb.turnOn()
         sc.run()

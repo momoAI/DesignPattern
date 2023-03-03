@@ -24,6 +24,6 @@ class AppleEmployee {
     }
 }
 
-extension AppleEmployee : Employee {
+extension AppleEmployee: Employee {
     // Employee协议接口都是根据AppleEmployee 提取的； 因此原本就已经实现协议方法了
 }

@@ -65,28 +65,32 @@ import UIKit
 //        let share3 = WXImageShare(imageData: imgData)
 //        share3.share()
         
-        let wx = WXSharePlatform()
-        let share1 = TextShare(implementor: wx, text: "心灵毒鸡汤...")
-        share1.share()
-        
-        let image = UIImage.init(named: "bridge.png")
-        guard let imgData = image?.pngData() else {
-            print("image data error")
-            return
-        }
-        let qq = QQSharePlatform()
-        let share2 = ImageShare(implementor: qq, imageData: imgData)
-        share2.share()
+//        let wx = WXSharePlatform()
+//        let share1 = TextShare(implementor: wx, text: "心灵毒鸡汤...")
+//        share1.share()
+//
+//        let image = UIImage.init(named: "bridge.png")
+//        guard let imgData = image?.pngData() else {
+//            print("image data error")
+//            return
+//        }
+//        let qq = QQSharePlatform()
+//        let share2 = ImageShare(implementor: qq, imageData: imgData)
+//        share2.share()
         
         
         // 装饰器模式 （减少继承）
-//        let coffee = KafelakuCoffee()
-//        let sugarCoffee = Sugar(coffee: coffee)
-//        let milkCoffee = Milk(coffee: coffee)
-//        let sugarMilkCoffee = Milk(coffee: sugarCoffee)
-//        sugarCoffee.sold()
-//        milkCoffee.sold()
-//        sugarMilkCoffee.sold()
+//        let flower = Flower()
+//        flower.sold()
+//        let flowerGift = FlowerWithGift()
+//        flowerGift.sold()
+//        let flowerGiftCard = FlowerWithGiftCard()
+//        flowerGiftCard.sold()
+        
+        let flower = Flower()
+        let giftWrap = Gift(goods: flower)
+        let cardWrap = Card(goods: giftWrap)
+        cardWrap.sold()
         
         // 外观模式
 //        let system = System()

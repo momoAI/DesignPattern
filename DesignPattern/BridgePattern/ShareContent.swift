@@ -15,7 +15,7 @@ protocol ShareContent {
 }
 
 // RefinedAbstraction
-struct TextShare : ShareContent {
+struct TextShare: ShareContent {
     var implementor: SharePlatform
     
     var text: String
@@ -25,7 +25,7 @@ struct TextShare : ShareContent {
     }
 }
 
-struct ImageShare : ShareContent {
+struct ImageShare: ShareContent {
     var implementor: SharePlatform
     
     var imageData: Data

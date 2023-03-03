@@ -7,7 +7,7 @@
 
 import Foundation
 
-class SpacesEmployeeClassAdapter : SpacesEmployee, Employee {
+class SpacesEmployeeClassAdapter: SpacesEmployee, Employee {
     var salary: Double {
         return Double(self.salary)
     }
@@ -18,7 +18,7 @@ class SpacesEmployeeClassAdapter : SpacesEmployee, Employee {
 }
 
 
-class SpacesEmployeeInstanceAdapter : AppleEmployee {
+class SpacesEmployeeInstanceAdapter: AppleEmployee {
     var spacesEmployee: SpacesEmployee
     
     init(spacesEmployee: SpacesEmployee) {

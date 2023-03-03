@@ -15,7 +15,7 @@ protocol SharePlatform {
 }
 
 // ConcreteImplementor
-struct WXSharePlatform : SharePlatform {
+struct WXSharePlatform: SharePlatform {
     func shareText(text: String) {
         // WXApi ....
         // ...
@@ -29,7 +29,7 @@ struct WXSharePlatform : SharePlatform {
     }
 }
 
-struct QQSharePlatform : SharePlatform {
+struct QQSharePlatform: SharePlatform {
     func shareText(text: String) {
         // QQApi ....
         // ...
