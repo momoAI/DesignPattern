@@ -48,7 +48,6 @@
 		8EBCE33A278C3736001AF53D /* TV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE339278C3736001AF53D /* TV.swift */; };
 		8EBCE33D278D32E1001AF53D /* Mediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE33C278D32E1001AF53D /* Mediator.swift */; };
 		8EBCE33F278D334E001AF53D /* Colleague.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE33E278D334E001AF53D /* Colleague.swift */; };
-		8EBCE341278D578C001AF53D /* mediator.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EBCE340278D578C001AF53D /* mediator.png */; };
 		8EBCE344278D6561001AF53D /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE343278D6561001AF53D /* Observer.swift */; };
 		8EBCE346278D6588001AF53D /* ObSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE345278D6588001AF53D /* ObSubject.swift */; };
 		8EBCE34B278D8AB7001AF53D /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE34A278D8AB7001AF53D /* State.swift */; };
@@ -61,6 +60,10 @@
 		CE38952E29B0ABE90012450E /* instance_adapter.png in Resources */ = {isa = PBXBuildFile; fileRef = CE38952D29B0ABE90012450E /* instance_adapter.png */; };
 		CE9B76E329AEF83C00B292CD /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9B76E229AEF83C00B292CD /* CameraManager.swift */; };
 		CED0409B29B6E4B4008F34FB /* observer.png in Resources */ = {isa = PBXBuildFile; fileRef = CED0409A29B6E4B4008F34FB /* observer.png */; };
+		CED0409D29B718ED008F34FB /* ViewControllerA.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED0409C29B718ED008F34FB /* ViewControllerA.swift */; };
+		CED0409F29B718FE008F34FB /* ViewControllerB.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED0409E29B718FE008F34FB /* ViewControllerB.swift */; };
+		CED040A129B7190A008F34FB /* ViewControllerC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED040A029B7190A008F34FB /* ViewControllerC.swift */; };
+		CED040A329B73554008F34FB /* mediator.png in Resources */ = {isa = PBXBuildFile; fileRef = CED040A229B73554008F34FB /* mediator.png */; };
 		CED4CD7629A8915000F5C9BD /* factory-method.png in Resources */ = {isa = PBXBuildFile; fileRef = CED4CD7529A8915000F5C9BD /* factory-method.png */; };
 		CED4CD7D29A89B0200F5C9BD /* XhwCameraFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4CD7C29A89B0200F5C9BD /* XhwCameraFactory.m */; };
 		CED4CD8029A89B1000F5C9BD /* AzyCameraFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4CD7F29A89B1000F5C9BD /* AzyCameraFactory.m */; };
@@ -152,7 +155,6 @@
 		8EBCE339278C3736001AF53D /* TV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TV.swift; sourceTree = "<group>"; };
 		8EBCE33C278D32E1001AF53D /* Mediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mediator.swift; sourceTree = "<group>"; };
 		8EBCE33E278D334E001AF53D /* Colleague.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colleague.swift; sourceTree = "<group>"; };
-		8EBCE340278D578C001AF53D /* mediator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mediator.png; sourceTree = "<group>"; };
 		8EBCE343278D6561001AF53D /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 		8EBCE345278D6588001AF53D /* ObSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObSubject.swift; sourceTree = "<group>"; };
 		8EBCE34A278D8AB7001AF53D /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
@@ -165,6 +167,10 @@
 		CE38952D29B0ABE90012450E /* instance_adapter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instance_adapter.png; sourceTree = "<group>"; };
 		CE9B76E229AEF83C00B292CD /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
 		CED0409A29B6E4B4008F34FB /* observer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = observer.png; sourceTree = "<group>"; };
+		CED0409C29B718ED008F34FB /* ViewControllerA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerA.swift; sourceTree = "<group>"; };
+		CED0409E29B718FE008F34FB /* ViewControllerB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerB.swift; sourceTree = "<group>"; };
+		CED040A029B7190A008F34FB /* ViewControllerC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerC.swift; sourceTree = "<group>"; };
+		CED040A229B73554008F34FB /* mediator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mediator.png; sourceTree = "<group>"; };
 		CED4CD7529A8915000F5C9BD /* factory-method.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "factory-method.png"; sourceTree = "<group>"; };
 		CED4CD7A29A89A2100F5C9BD /* CameraFactoryProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraFactoryProtocol.h; sourceTree = "<group>"; };
 		CED4CD7B29A89B0200F5C9BD /* XhwCameraFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XhwCameraFactory.h; sourceTree = "<group>"; };
@@ -244,8 +250,6 @@
 				CED0409929B5CEA4008F34FB /* BehaviorType */,
 				8EBCE350278E679B001AF53D /* Strategy */,
 				8EBCE349278D8AA8001AF53D /* State */,
-				8EBCE342278D6546001AF53D /* Observer */,
-				8EBCE33B278D32C2001AF53D /* Mediator */,
 				8EBCE332278C34B5001AF53D /* Command */,
 				8E12B93A277D5E8900938808 /* AppDelegate.h */,
 				8E12B93B277D5E8900938808 /* AppDelegate.m */,
@@ -392,9 +396,12 @@
 		8EBCE33B278D32C2001AF53D /* Mediator */ = {
 			isa = PBXGroup;
 			children = (
-				8EBCE340278D578C001AF53D /* mediator.png */,
+				CED040A229B73554008F34FB /* mediator.png */,
 				8EBCE33C278D32E1001AF53D /* Mediator.swift */,
 				8EBCE33E278D334E001AF53D /* Colleague.swift */,
+				CED0409C29B718ED008F34FB /* ViewControllerA.swift */,
+				CED0409E29B718FE008F34FB /* ViewControllerB.swift */,
+				CED040A029B7190A008F34FB /* ViewControllerC.swift */,
 			);
 			name = Mediator;
 			sourceTree = "<group>";
@@ -456,6 +463,8 @@
 		CED0409929B5CEA4008F34FB /* BehaviorType */ = {
 			isa = PBXGroup;
 			children = (
+				8EBCE33B278D32C2001AF53D /* Mediator */,
+				8EBCE342278D6546001AF53D /* Observer */,
 			);
 			name = BehaviorType;
 			sourceTree = "<group>";
@@ -624,10 +633,10 @@
 				8EBCE34F278E5F5B001AF53D /* state.png in Resources */,
 				CEDAC91429B1F5EB001E6980 /* proxy.png in Resources */,
 				CED4CD7629A8915000F5C9BD /* factory-method.png in Resources */,
+				CED040A329B73554008F34FB /* mediator.png in Resources */,
 				8E12B94A277D5E8C00938808 /* LaunchScreen.storyboard in Resources */,
 				8EBCE32D278C26B6001AF53D /* composite.png in Resources */,
 				CEDAC91029B1BBDE001E6980 /* facade.png in Resources */,
-				8EBCE341278D578C001AF53D /* mediator.png in Resources */,
 				CEDAC91229B1DA2A001E6980 /* decorator.png in Resources */,
 				CED4CD8829ACB0A900F5C9BD /* builder.png in Resources */,
 				8EBCE334278C34C6001AF53D /* command.png in Resources */,
@@ -682,6 +691,7 @@
 				8EBCE338278C35B1001AF53D /* TVInvoker.swift in Sources */,
 				8EBCE346278D6588001AF53D /* ObSubject.swift in Sources */,
 				8EBCE326278C0164001AF53D /* FlyWeight.swift in Sources */,
+				CED040A129B7190A008F34FB /* ViewControllerC.swift in Sources */,
 				8EBCE31527898342001AF53D /* Goods.swift in Sources */,
 				8E12B94D277D5E8C00938808 /* main.m in Sources */,
 				8EBCE32A278C025A001AF53D /* FlyWeighntFactory.swift in Sources */,
@@ -693,6 +703,7 @@
 				8EBCE352278E67AD001AF53D /* Strategy.swift in Sources */,
 				8EBCE31F278999F3001AF53D /* Subject.swift in Sources */,
 				8EBCE3032786E790001AF53D /* EmployeeAdapter.swift in Sources */,
+				CED0409F29B718FE008F34FB /* ViewControllerB.swift in Sources */,
 				CED4CD8329AC8F2700F5C9BD /* XhwSpeaker.m in Sources */,
 				8EBCE30E2789660E001AF53D /* SharePlatform.swift in Sources */,
 				8EBCE317278984CA001AF53D /* GoodsAttached.swift in Sources */,
@@ -708,6 +719,7 @@
 				8EBCE32F278C26E9001AF53D /* TreeComponent.swift in Sources */,
 				8EBCE31C278992F1001AF53D /* System.swift in Sources */,
 				8E12B93F277D5E8900938808 /* SceneDelegate.m in Sources */,
+				CED0409D29B718ED008F34FB /* ViewControllerA.swift in Sources */,
 				CED4CD8C29ACB4CA00F5C9BD /* XhwCameraBuilder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

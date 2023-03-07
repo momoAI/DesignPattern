@@ -141,6 +141,26 @@ import UIKit
 //        NotificationCenter.default.remove(self, name: "test")
 //        NotificationCenter.default.post(name: "test")
         
+        // 中介者模式
+//        let mediator = HouseMediator()
+//        let owner = Owner(name: "fangdong", mediator: mediator)
+//        let tenant = Tenant(name: "yang", mediator: mediator)
+//        mediator.register(user: owner, id: 1)
+//        mediator.register(user: tenant, id: 2)
+//        tenant.contact(info: "wanna a house: 5 room, >100m²", id: 1)
+//        owner.contact(info: "i have", id: 2)
+//        var mediator = RouterStructure()
+//        let a = ViewControllerA()
+//        a.router = mediator
+//        let b = ViewControllerB()
+//        b.router = mediator
+//        let c = ViewControllerC()
+//        c.router = mediator
+//        mediator.register(vc: a, path: "/A")
+//        mediator.register(vc: b, path: "/B")
+//        mediator.register(vc: c, path: "/C")
+        
+        
         // 命令模式
 //        let receiver = TV()
 //        let commandOpen = TVOpenCommand(tv: receiver)
@@ -154,15 +174,6 @@ import UIKit
 //        invoker2.addCommand(commandClose, for: "c")
 //        invoker2.invoke(key: "o")
 //        invoker2.invoke(key: "c")
-        
-        // 中介者模式
-//        let mediator = HouseMediator()
-//        let owner = Owner(name: "fangdong", mediator: mediator)
-//        let tenant = Tenant(name: "yang", mediator: mediator)
-//        mediator.register(user: owner, id: 1)
-//        mediator.register(user: tenant, id: 2)
-//        tenant.contact(info: "wanna a house: 5 room, >100m²", id: 1)
-//        owner.contact(info: "i have", id: 2)
         
         // 状态模式
 //        var room = Room()

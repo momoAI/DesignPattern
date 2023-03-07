@@ -6,24 +6,49 @@
 //
 
 import Foundation
+import UIKit
 
-protocol Mediator {
-    var users: [Int : User] { get }
-    
-    func register(user: User, id: Int)
-    func contact(info: String, id: Int)
+// Mediator
+protocol RouterMediator {
+    var viewControllers: [String : ViewControllerSubject] { get }
+
+    mutating func register(vc: ViewControllerSubject, path: String)
+    func router(from: ViewControllerSubject, to path: String)
 }
 
-class HouseMediator : Mediator {
-    var users: [Int : User] = [:]
+// ConcreteMediator
+struct RouterStructure: RouterMediator {
+    var viewControllers: [String : ViewControllerSubject] = [:]
     
-    func register(user: User, id: Int) {
-        users[id] = user
+    mutating func register(vc: ViewControllerSubject, path: String) {
+        viewControllers[path] = vc
     }
     
-    func contact(info: String, id: Int) {
-        if let user = users[id] {
-            user.receive(info: info)
+    func router(from: ViewControllerSubject, to path: String) {
+        if let toVc = viewControllers[path] {
+            from.present(toVc, animated: true)
         }
     }
 }
+
+
+//protocol Mediator {
+//    var users: [Int : User] { get }
+//    
+//    func register(user: User, id: Int)
+//    func contact(info: String, id: Int)
+//}
+//
+//class HouseMediator : Mediator {
+//    var users: [Int : User] = [:]
+//    
+//    func register(user: User, id: Int) {
+//        users[id] = user
+//    }
+//    
+//    func contact(info: String, id: Int) {
+//        if let user = users[id] {
+//            user.receive(info: info)
+//        }
+//    }
+//}

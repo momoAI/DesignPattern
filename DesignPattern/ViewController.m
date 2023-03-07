@@ -110,5 +110,10 @@
     [PatternTest test];
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+    ViewControllerA *a = [[ViewControllerA alloc] init];
+    [self presentViewController:a animated:YES completion:nil];
+}
 
 @end
