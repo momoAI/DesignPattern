@@ -126,6 +126,21 @@ import UIKit
 //        rnode.addComponent(leaf)
 //        rnode.operateDepth(depth: 0)
         
+        
+        // 观察者模式
+//        let subject = ConcreteSubject()
+//        let observer1 = ConcreteObserverA()
+//        let observer2 = ConcreteObserverB()
+//        subject.add(observer1)
+//        subject.add(observer2)
+//        subject.state = "first"
+//        subject.state = "second"
+        
+//        NotificationCenter.default.add(observer: self, selector: #selector(notice(n:)), name: "test")
+//        NotificationCenter.default.add(observer: PatternTest(), selector: #selector(notice(n:)), name: "test")
+//        NotificationCenter.default.remove(self, name: "test")
+//        NotificationCenter.default.post(name: "test")
+        
         // 命令模式
 //        let receiver = TV()
 //        let commandOpen = TVOpenCommand(tv: receiver)
@@ -149,15 +164,6 @@ import UIKit
 //        tenant.contact(info: "wanna a house: 5 room, >100m²", id: 1)
 //        owner.contact(info: "i have", id: 2)
         
-        // 观察者模式
-//        let subject = ConcreteSubject()
-//        let observer1 = ConcreteObserverA()
-//        let observer2 = ConcreteObserverB()
-//        subject.add(observer1)
-//        subject.add(observer2)
-//        subject.state = "first"
-//        subject.state = "second"
-
         // 状态模式
 //        var room = Room()
 //        room.book()
@@ -192,5 +198,13 @@ import UIKit
 ////        print(context1.operate(a: 1, b: 2))
 ////        let context2 = STContext(strategy: strategy2)
 ////        print(context2.operate(a: 1.1, b: 2.1))
+    }
+    
+    @objc static func notice(n: Notification) {
+        print("class..\(n.name)..\(String(describing: n.userInfo))")
+    }
+    
+    @objc func notice(n: Notification) {
+        print("instance..\(n.name)..\(String(describing: n.userInfo))")
     }
 }

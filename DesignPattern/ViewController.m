@@ -106,6 +106,7 @@
 //    [cameraH connect];
     
     
+    
     [PatternTest test];
 }
 

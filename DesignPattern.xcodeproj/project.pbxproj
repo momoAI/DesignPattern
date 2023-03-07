@@ -51,7 +51,6 @@
 		8EBCE341278D578C001AF53D /* mediator.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EBCE340278D578C001AF53D /* mediator.png */; };
 		8EBCE344278D6561001AF53D /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE343278D6561001AF53D /* Observer.swift */; };
 		8EBCE346278D6588001AF53D /* ObSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE345278D6588001AF53D /* ObSubject.swift */; };
-		8EBCE348278D7803001AF53D /* observer.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EBCE347278D7803001AF53D /* observer.png */; };
 		8EBCE34B278D8AB7001AF53D /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE34A278D8AB7001AF53D /* State.swift */; };
 		8EBCE34D278D8ADD001AF53D /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE34C278D8ADD001AF53D /* Context.swift */; };
 		8EBCE34F278E5F5B001AF53D /* state.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EBCE34E278E5F5B001AF53D /* state.png */; };
@@ -61,6 +60,7 @@
 		CE38952C29B0A30B0012450E /* class_adapter.png in Resources */ = {isa = PBXBuildFile; fileRef = CE38952B29B0A30B0012450E /* class_adapter.png */; };
 		CE38952E29B0ABE90012450E /* instance_adapter.png in Resources */ = {isa = PBXBuildFile; fileRef = CE38952D29B0ABE90012450E /* instance_adapter.png */; };
 		CE9B76E329AEF83C00B292CD /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9B76E229AEF83C00B292CD /* CameraManager.swift */; };
+		CED0409B29B6E4B4008F34FB /* observer.png in Resources */ = {isa = PBXBuildFile; fileRef = CED0409A29B6E4B4008F34FB /* observer.png */; };
 		CED4CD7629A8915000F5C9BD /* factory-method.png in Resources */ = {isa = PBXBuildFile; fileRef = CED4CD7529A8915000F5C9BD /* factory-method.png */; };
 		CED4CD7D29A89B0200F5C9BD /* XhwCameraFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4CD7C29A89B0200F5C9BD /* XhwCameraFactory.m */; };
 		CED4CD8029A89B1000F5C9BD /* AzyCameraFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = CED4CD7F29A89B1000F5C9BD /* AzyCameraFactory.m */; };
@@ -155,7 +155,6 @@
 		8EBCE340278D578C001AF53D /* mediator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mediator.png; sourceTree = "<group>"; };
 		8EBCE343278D6561001AF53D /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 		8EBCE345278D6588001AF53D /* ObSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObSubject.swift; sourceTree = "<group>"; };
-		8EBCE347278D7803001AF53D /* observer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = observer.png; sourceTree = "<group>"; };
 		8EBCE34A278D8AB7001AF53D /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		8EBCE34C278D8ADD001AF53D /* Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
 		8EBCE34E278E5F5B001AF53D /* state.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = state.png; sourceTree = "<group>"; };
@@ -165,6 +164,7 @@
 		CE38952B29B0A30B0012450E /* class_adapter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = class_adapter.png; sourceTree = "<group>"; };
 		CE38952D29B0ABE90012450E /* instance_adapter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instance_adapter.png; sourceTree = "<group>"; };
 		CE9B76E229AEF83C00B292CD /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		CED0409A29B6E4B4008F34FB /* observer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = observer.png; sourceTree = "<group>"; };
 		CED4CD7529A8915000F5C9BD /* factory-method.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "factory-method.png"; sourceTree = "<group>"; };
 		CED4CD7A29A89A2100F5C9BD /* CameraFactoryProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraFactoryProtocol.h; sourceTree = "<group>"; };
 		CED4CD7B29A89B0200F5C9BD /* XhwCameraFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XhwCameraFactory.h; sourceTree = "<group>"; };
@@ -239,16 +239,14 @@
 		8E12B939277D5E8900938808 /* DesignPattern */ = {
 			isa = PBXGroup;
 			children = (
-				CE38952F29B0B5610012450E /* StructuralType */,
 				CE9B76E429B03AFE00B292CD /* CreationType */,
+				CE38952F29B0B5610012450E /* StructuralType */,
+				CED0409929B5CEA4008F34FB /* BehaviorType */,
 				8EBCE350278E679B001AF53D /* Strategy */,
 				8EBCE349278D8AA8001AF53D /* State */,
 				8EBCE342278D6546001AF53D /* Observer */,
 				8EBCE33B278D32C2001AF53D /* Mediator */,
 				8EBCE332278C34B5001AF53D /* Command */,
-				8EBCE32B278C26AA001AF53D /* Composite */,
-				8EBCE324278C0110001AF53D /* FlyWeight */,
-				8EBCE31D278999B1001AF53D /* Proxy */,
 				8E12B93A277D5E8900938808 /* AppDelegate.h */,
 				8E12B93B277D5E8900938808 /* AppDelegate.m */,
 				8E12B93D277D5E8900938808 /* SceneDelegate.h */,
@@ -404,7 +402,7 @@
 		8EBCE342278D6546001AF53D /* Observer */ = {
 			isa = PBXGroup;
 			children = (
-				8EBCE347278D7803001AF53D /* observer.png */,
+				CED0409A29B6E4B4008F34FB /* observer.png */,
 				8EBCE343278D6561001AF53D /* Observer.swift */,
 				8EBCE345278D6588001AF53D /* ObSubject.swift */,
 			);
@@ -434,6 +432,9 @@
 		CE38952F29B0B5610012450E /* StructuralType */ = {
 			isa = PBXGroup;
 			children = (
+				8EBCE32B278C26AA001AF53D /* Composite */,
+				8EBCE324278C0110001AF53D /* FlyWeight */,
+				8EBCE31D278999B1001AF53D /* Proxy */,
 				8EBCE3182789921C001AF53D /* Facade */,
 				8EBCE30427895B63001AF53D /* BridgePattern */,
 				8EBCE2F72786E2F0001AF53D /* AdapterPattern */,
@@ -450,6 +451,13 @@
 				8EBCE2EB27868F19001AF53D /* FactoryPattern-OC */,
 			);
 			name = CreationType;
+			sourceTree = "<group>";
+		};
+		CED0409929B5CEA4008F34FB /* BehaviorType */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = BehaviorType;
 			sourceTree = "<group>";
 		};
 		CED4CD7729A891ED00F5C9BD /* simple */ = {
@@ -625,9 +633,9 @@
 				8EBCE334278C34C6001AF53D /* command.png in Resources */,
 				8EBCE356278E8409001AF53D /* strategy.png in Resources */,
 				CE38952C29B0A30B0012450E /* class_adapter.png in Resources */,
-				8EBCE348278D7803001AF53D /* observer.png in Resources */,
 				8E12B947277D5E8C00938808 /* Assets.xcassets in Resources */,
 				CEDAC90E29B1B761001E6980 /* bridge.png in Resources */,
+				CED0409B29B6E4B4008F34FB /* observer.png in Resources */,
 				8EBCE30B27895C9F001AF53D /* factory-abstrac.png in Resources */,
 				8E12B945277D5E8900938808 /* Main.storyboard in Resources */,
 				CE38952E29B0ABE90012450E /* instance_adapter.png in Resources */,
