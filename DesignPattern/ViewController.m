@@ -105,9 +105,10 @@
 //    id<CameraProtocol> cameraH = [builderH build];
 //    [cameraH connect];
     
-    
-    
     [PatternTest test];
+    
+    [[NSInvocation alloc] init];
+    [[NSUndoManager alloc] init];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {

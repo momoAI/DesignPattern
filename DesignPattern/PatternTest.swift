@@ -203,6 +203,12 @@ import UIKit
 //        print(context2.operate(a: 1.1, b: 2.1))
         
         
+        // 状态模式
+//        var room = Room()
+//        room.book()
+//        room.book()
+//        room.checkIn()
+        
         // 命令模式
 //        let receiver = TV()
 //        let commandOpen = TVOpenCommand(tv: receiver)
@@ -217,12 +223,6 @@ import UIKit
 //        invoker2.invoke(key: "o")
 //        invoker2.invoke(key: "c")
         
-        // 状态模式
-//        var room = Room()
-//        room.book()
-//        room.checkOut()
-//        room.book()
-//        room.checkIn()
         
     }
     
