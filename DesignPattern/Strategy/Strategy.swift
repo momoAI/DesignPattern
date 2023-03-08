@@ -73,6 +73,13 @@ struct MulStrategy<T: Numeric> : Strategy {
 
 }
 
+//struct DivStrategy<T: Numeric> : Strategy {
+//    func algorithm(a: T, b: T) -> T {
+//        return a / b
+//    }
+//
+//}
+
 //protocol Strategy {
 //    associatedtype T
 //
