@@ -107,8 +107,17 @@
     
     [PatternTest test];
     
-    [[NSInvocation alloc] init];
-    [[NSUndoManager alloc] init];
+    NSMethodSignature *sig = [NSMethodSignature signatureWithObjCTypes:"v@:@"];
+    NSInvocation *command = [NSInvocation invocationWithMethodSignature:sig];
+    command.target = self;
+    command.selector = @selector(test:);
+    NSString *param = @"from command";
+    [command setArgument:&param atIndex:2];
+    [command invoke];
+}
+
+- (void)test:(NSString *)param {
+    NSLog(@"test--%@", param);
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
