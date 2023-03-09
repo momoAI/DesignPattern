@@ -210,19 +210,37 @@ import UIKit
 //        room.checkIn()
         
         // 命令模式
-//        let receiver = TV()
-//        let commandOpen = TVOpenCommand(tv: receiver)
-//        let commandClose = TVCloseCommand(tv: receiver)
+        // 耦合 直接调用
+        let receiver = TV()
+        let commandOpen = TVOpenCommand(tv: receiver)
+        let commandClose = TVCloseCommand(tv: receiver)
+        let commandSwitch = SwitchCommand(tv: receiver)
 //        let invoker = TVInvoker(openCommand: commandOpen, closeCommand: commandClose)
 //        invoker.openTV()
 //        invoker.closeTV()
-//
-//        var invoker2 = TVInvoker()
-//        invoker2.addCommand(commandOpen, for: "o")
-//        invoker2.addCommand(commandClose, for: "c")
+
+        // 聚合 通过指令(key) 调用
+        var invoker2 = TVInvoker()
+        invoker2.addCommand(commandOpen, for: "o")
+        invoker2.addCommand(commandSwitch, for: "s")
+        invoker2.addCommand(commandClose, for: "c")
 //        invoker2.invoke(key: "o")
 //        invoker2.invoke(key: "c")
         
+        invoker2.removeCommand(for: "s")
+        invoker2.invoke()
+        
+        // 访问者
+//        let m = Man(name: "jack")
+//        let wm = Woman(name: "rose")
+//        var structure = PersonStructure()
+//        structure.addPerson(m)
+//        structure.addPerson(wm)
+////        structure.remove(m)
+//        let success = Success()
+//        let faild = Faild()
+//        structure.display(visitor: success)
+//        structure.display(visitor: faild)
         
     }
     

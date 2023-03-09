@@ -20,6 +20,9 @@ struct TVOpenCommand : TVCommand {
     
     func execute() {
         tv.open()
+        
+        // 记录请求日志
+        print("执行了open命令")
     }
 }
 
@@ -28,5 +31,19 @@ struct TVCloseCommand : TVCommand {
     
     func execute() {
         tv.close()
+        
+        // 记录请求日志
+        print("执行了close命令")
+    }
+}
+
+struct SwitchCommand : TVCommand {
+    var tv: TV
+    
+    func execute() {
+        tv.switch()
+        
+        // 记录请求日志
+        print("执行了switch命令")
     }
 }

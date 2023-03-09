@@ -16,4 +16,8 @@ struct TV {
     func close() {
         print("tv close")
     }
+    
+    func `switch`() {
+        print("channel switch")
+    }
 }

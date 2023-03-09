@@ -42,10 +42,9 @@
 		8EBCE32D278C26B6001AF53D /* composite.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EBCE32C278C26B6001AF53D /* composite.png */; };
 		8EBCE32F278C26E9001AF53D /* TreeComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE32E278C26E9001AF53D /* TreeComponent.swift */; };
 		8EBCE331278C2740001AF53D /* TreeComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE330278C2740001AF53D /* TreeComposite.swift */; };
-		8EBCE334278C34C6001AF53D /* command.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EBCE333278C34C6001AF53D /* command.png */; };
-		8EBCE336278C34E3001AF53D /* TVCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE335278C34E3001AF53D /* TVCommand.swift */; };
-		8EBCE338278C35B1001AF53D /* TVInvoker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE337278C35B1001AF53D /* TVInvoker.swift */; };
-		8EBCE33A278C3736001AF53D /* TV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE339278C3736001AF53D /* TV.swift */; };
+		8EBCE336278C34E3001AF53D /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE335278C34E3001AF53D /* Command.swift */; };
+		8EBCE338278C35B1001AF53D /* Invoker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE337278C35B1001AF53D /* Invoker.swift */; };
+		8EBCE33A278C3736001AF53D /* Receiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE339278C3736001AF53D /* Receiver.swift */; };
 		8EBCE33D278D32E1001AF53D /* Mediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE33C278D32E1001AF53D /* Mediator.swift */; };
 		8EBCE33F278D334E001AF53D /* Colleague.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE33E278D334E001AF53D /* Colleague.swift */; };
 		8EBCE344278D6561001AF53D /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCE343278D6561001AF53D /* Observer.swift */; };
@@ -78,6 +77,11 @@
 		CEDAC91429B1F5EB001E6980 /* proxy.png in Resources */ = {isa = PBXBuildFile; fileRef = CEDAC91329B1F5EB001E6980 /* proxy.png */; };
 		CEF78D4129B863690054B695 /* observer.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF78D4029B863690054B695 /* observer.png */; };
 		CEF78D4329B877A00054B695 /* state.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF78D4229B877A00054B695 /* state.png */; };
+		CEF78D4629B896C70054B695 /* ObjectStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF78D4529B896C70054B695 /* ObjectStructure.swift */; };
+		CEF78D4829B896E70054B695 /* Visitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF78D4729B896E70054B695 /* Visitor.swift */; };
+		CEF78D4A29B896F20054B695 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF78D4929B896F20054B695 /* Element.swift */; };
+		CEF78D4C29B9676C0054B695 /* visitor.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF78D4B29B9676C0054B695 /* visitor.png */; };
+		CEF78D4E29B98BB70054B695 /* command.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF78D4D29B98BB70054B695 /* command.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,10 +153,9 @@
 		8EBCE32C278C26B6001AF53D /* composite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = composite.png; sourceTree = "<group>"; };
 		8EBCE32E278C26E9001AF53D /* TreeComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeComponent.swift; sourceTree = "<group>"; };
 		8EBCE330278C2740001AF53D /* TreeComposite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeComposite.swift; sourceTree = "<group>"; };
-		8EBCE333278C34C6001AF53D /* command.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = command.png; sourceTree = "<group>"; };
-		8EBCE335278C34E3001AF53D /* TVCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCommand.swift; sourceTree = "<group>"; };
-		8EBCE337278C35B1001AF53D /* TVInvoker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVInvoker.swift; sourceTree = "<group>"; };
-		8EBCE339278C3736001AF53D /* TV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TV.swift; sourceTree = "<group>"; };
+		8EBCE335278C34E3001AF53D /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		8EBCE337278C35B1001AF53D /* Invoker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invoker.swift; sourceTree = "<group>"; };
+		8EBCE339278C3736001AF53D /* Receiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Receiver.swift; sourceTree = "<group>"; };
 		8EBCE33C278D32E1001AF53D /* Mediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mediator.swift; sourceTree = "<group>"; };
 		8EBCE33E278D334E001AF53D /* Colleague.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colleague.swift; sourceTree = "<group>"; };
 		8EBCE343278D6561001AF53D /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
@@ -195,6 +198,11 @@
 		CEDAC91329B1F5EB001E6980 /* proxy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = proxy.png; sourceTree = "<group>"; };
 		CEF78D4029B863690054B695 /* observer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = observer.png; sourceTree = "<group>"; };
 		CEF78D4229B877A00054B695 /* state.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = state.png; sourceTree = "<group>"; };
+		CEF78D4529B896C70054B695 /* ObjectStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectStructure.swift; sourceTree = "<group>"; };
+		CEF78D4729B896E70054B695 /* Visitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visitor.swift; sourceTree = "<group>"; };
+		CEF78D4929B896F20054B695 /* Element.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
+		CEF78D4B29B9676C0054B695 /* visitor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = visitor.png; sourceTree = "<group>"; };
+		CEF78D4D29B98BB70054B695 /* command.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = command.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,7 +256,6 @@
 				CE9B76E429B03AFE00B292CD /* CreationType */,
 				CE38952F29B0B5610012450E /* StructuralType */,
 				CED0409929B5CEA4008F34FB /* BehaviorType */,
-				8EBCE332278C34B5001AF53D /* Command */,
 				8E12B93A277D5E8900938808 /* AppDelegate.h */,
 				8E12B93B277D5E8900938808 /* AppDelegate.m */,
 				8E12B93D277D5E8900938808 /* SceneDelegate.h */,
@@ -383,10 +390,10 @@
 		8EBCE332278C34B5001AF53D /* Command */ = {
 			isa = PBXGroup;
 			children = (
-				8EBCE333278C34C6001AF53D /* command.png */,
-				8EBCE335278C34E3001AF53D /* TVCommand.swift */,
-				8EBCE337278C35B1001AF53D /* TVInvoker.swift */,
-				8EBCE339278C3736001AF53D /* TV.swift */,
+				CEF78D4D29B98BB70054B695 /* command.png */,
+				8EBCE335278C34E3001AF53D /* Command.swift */,
+				8EBCE337278C35B1001AF53D /* Invoker.swift */,
+				8EBCE339278C3736001AF53D /* Receiver.swift */,
 			);
 			path = Command;
 			sourceTree = "<group>";
@@ -461,6 +468,8 @@
 		CED0409929B5CEA4008F34FB /* BehaviorType */ = {
 			isa = PBXGroup;
 			children = (
+				CEF78D4429B8950F0054B695 /* Visitor */,
+				8EBCE332278C34B5001AF53D /* Command */,
 				8EBCE349278D8AA8001AF53D /* State */,
 				8EBCE350278E679B001AF53D /* Strategy */,
 				8EBCE33B278D32C2001AF53D /* Mediator */,
@@ -523,6 +532,17 @@
 				CE9B76E229AEF83C00B292CD /* CameraManager.swift */,
 			);
 			path = Singleton;
+			sourceTree = "<group>";
+		};
+		CEF78D4429B8950F0054B695 /* Visitor */ = {
+			isa = PBXGroup;
+			children = (
+				CEF78D4B29B9676C0054B695 /* visitor.png */,
+				CEF78D4529B896C70054B695 /* ObjectStructure.swift */,
+				CEF78D4729B896E70054B695 /* Visitor.swift */,
+				CEF78D4929B896F20054B695 /* Element.swift */,
+			);
+			path = Visitor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -630,6 +650,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EBCE328278C0176001AF53D /* flyweight.png in Resources */,
+				CEF78D4E29B98BB70054B695 /* command.png in Resources */,
 				CEDAC91429B1F5EB001E6980 /* proxy.png in Resources */,
 				CED4CD7629A8915000F5C9BD /* factory-method.png in Resources */,
 				8E12B94A277D5E8C00938808 /* LaunchScreen.storyboard in Resources */,
@@ -639,7 +660,7 @@
 				CEDAC91029B1BBDE001E6980 /* facade.png in Resources */,
 				CEDAC91229B1DA2A001E6980 /* decorator.png in Resources */,
 				CED4CD8829ACB0A900F5C9BD /* builder.png in Resources */,
-				8EBCE334278C34C6001AF53D /* command.png in Resources */,
+				CEF78D4C29B9676C0054B695 /* visitor.png in Resources */,
 				CE38952C29B0A30B0012450E /* class_adapter.png in Resources */,
 				8E12B947277D5E8C00938808 /* Assets.xcassets in Resources */,
 				8EBCE30B27895C9F001AF53D /* factory-abstrac.png in Resources */,
@@ -684,11 +705,12 @@
 				8EBCE34B278D8AB7001AF53D /* State.swift in Sources */,
 				8E12B98E277DAAB400938808 /* XhwFactory.m in Sources */,
 				8EBCE321278999FC001AF53D /* Proxy.swift in Sources */,
+				CEF78D4A29B896F20054B695 /* Element.swift in Sources */,
 				8EBCE33F278D334E001AF53D /* Colleague.swift in Sources */,
 				8E12B93C277D5E8900938808 /* AppDelegate.m in Sources */,
 				8EBCE2FD2786E51D001AF53D /* AppleEmployee.swift in Sources */,
 				8EBCE344278D6561001AF53D /* Observer.swift in Sources */,
-				8EBCE338278C35B1001AF53D /* TVInvoker.swift in Sources */,
+				8EBCE338278C35B1001AF53D /* Invoker.swift in Sources */,
 				8EBCE346278D6588001AF53D /* ObSubject.swift in Sources */,
 				8EBCE326278C0164001AF53D /* FlyWeight.swift in Sources */,
 				CED040A129B7190A008F34FB /* ViewControllerC.swift in Sources */,
@@ -697,6 +719,7 @@
 				8EBCE32A278C025A001AF53D /* FlyWeighntFactory.swift in Sources */,
 				8EBCE331278C2740001AF53D /* TreeComposite.swift in Sources */,
 				CED6A5B129AEE125009EBA6F /* CameraManager.m in Sources */,
+				CEF78D4629B896C70054B695 /* ObjectStructure.swift in Sources */,
 				8EBCE33D278D32E1001AF53D /* Mediator.swift in Sources */,
 				CED4CD7D29A89B0200F5C9BD /* XhwCameraFactory.m in Sources */,
 				8E12B971277D8DED00938808 /* CameraFactory.m in Sources */,
@@ -707,8 +730,8 @@
 				CED4CD8329AC8F2700F5C9BD /* XhwSpeaker.m in Sources */,
 				8EBCE30E2789660E001AF53D /* SharePlatform.swift in Sources */,
 				8EBCE317278984CA001AF53D /* GoodsAttached.swift in Sources */,
-				8EBCE336278C34E3001AF53D /* TVCommand.swift in Sources */,
-				8EBCE33A278C3736001AF53D /* TV.swift in Sources */,
+				8EBCE336278C34E3001AF53D /* Command.swift in Sources */,
+				8EBCE33A278C3736001AF53D /* Receiver.swift in Sources */,
 				CE9B76E329AEF83C00B292CD /* CameraManager.swift in Sources */,
 				CED4CD8F29ACBA2100F5C9BD /* CameraDirector.m in Sources */,
 				8E12B991277DAD1B00938808 /* AzyFactory.m in Sources */,
@@ -720,6 +743,7 @@
 				8EBCE31C278992F1001AF53D /* System.swift in Sources */,
 				8E12B93F277D5E8900938808 /* SceneDelegate.m in Sources */,
 				CED0409D29B718ED008F34FB /* ViewControllerA.swift in Sources */,
+				CEF78D4829B896E70054B695 /* Visitor.swift in Sources */,
 				CED4CD8C29ACB4CA00F5C9BD /* XhwCameraBuilder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
